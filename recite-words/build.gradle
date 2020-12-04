@@ -1,0 +1,62 @@
+group 'org.noodle'
+version '1.0.0.alpha-1'
+
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/groups/public/'
+        }
+        maven {
+            url 'http://47.92.99.153:30003/nexus/content/groups/public/'
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$rootProject.ext.dependsVersionConfig.springBootVersion")
+        classpath "gradle.plugin.com.arenagod.gradle:mybatis-generator-plugin:1.4"
+    }
+}
+
+apply plugin: 'java'
+//apply plugin: 'org.springframework.boot'
+apply plugin: "com.arenagod.gradle.MybatisGenerator"
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+    maven {
+        url 'http://47.92.99.153:30003/nexus/content/groups/public/'
+    }
+}
+
+configurations {
+    mybatisGenerator
+}
+
+mybatisGenerator {
+    verbose = true
+    configFile = 'src/main/resources/mybatis/generatorConfig.xml'
+}
+
+dependencies {
+    compile project (":noodle-rest-service-basic")
+    compile("org.springframework.boot:spring-boot-autoconfigure:$rootProject.ext.dependsVersionConfig.springBootVersion")
+    compile("org.springframework.boot:spring-boot-starter-web:$rootProject.ext.dependsVersionConfig.springBootVersion")
+    compile("org.springframework.boot:spring-boot-starter-jdbc:$rootProject.ext.dependsVersionConfig.springBootVersion")
+    compile("com.github.pagehelper:pagehelper-spring-boot-starter:$rootProject.ext.dependsVersionConfig.mybatisPageHelperVersion")
+    compile "org.apache.logging.log4j:log4j-api:${rootProject.ext.dependsVersionConfig.log4jVersion}"
+    compile "org.apache.logging.log4j:log4j-core:${rootProject.ext.dependsVersionConfig.log4jVersion}"
+
+    compile ("org.postgresql:postgresql:${rootProject.ext.dependsVersionConfig.pgsqlJdbcVersion}")
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    mybatisGenerator group: 'org.mybatis.generator', name: 'mybatis-generator-maven-plugin', version: '1.3.6'
+    mybatisGenerator group: 'org.mybatis.generator', name: 'mybatis-generator-core', version: '1.3.6'
+    mybatisGenerator 'tk.mybatis:mapper:3.5.2'
+}

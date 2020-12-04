@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d5a29b73-913a-4eb0-ba6a-05bd6fab4a3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/51dd6677-e998-45f3-ade6-701890ae1e0d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/51dd6677-e998-45f3-ade6-701890ae1e0d/storage_v2/_src_/database/recite_words.NKSJDQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/51dd6677-e998-45f3-ade6-701890ae1e0d/storage_v2/_src_/database/recite_words.NKSJDQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/51dd6677-e998-45f3-ade6-701890ae1e0d/storage_v2/_src_/database/recite_words.NKSJDQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/wanghy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/recite-words.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design.pdman.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/crebas.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-id-generator/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-id-generator/build/classes/java/main/org/noodle/autoconfig/SnowFlakeConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-id-generator/build/classes/java/main/org/noodle/util/id/SimpleSnowFlakeImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-id-generator/build/classes/java/main/org/noodle/util/id/SnowFlake.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-id-generator/build/libs/noodle-id-generator-1.0.0.alpha-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-id-generator/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-id-generator/src/main/java/org/noodle/autoconfig/SnowFlakeConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-id-generator/src/main/java/org/noodle/util/id/SimpleSnowFlakeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-id-generator/src/main/java/org/noodle/util/id/SnowFlake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/build/classes/java/main/org/noodle/beans/NoodleApiParam.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/build/classes/java/main/org/noodle/beans/NoodleException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/build/classes/java/main/org/noodle/beans/NoodleResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/build/classes/java/main/org/noodle/controller/NoodlePostController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/build/classes/java/main/org/noodle/service/ApplicationContextAwareNoodle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/build/classes/java/main/org/noodle/service/NoodlePostService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/build/libs/noodle-rest-service-basic-1.0.0.alpha-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/src/main/java/org/noodle/beans/NoodleApiParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/src/main/java/org/noodle/beans/NoodleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/src/main/java/org/noodle/beans/NoodleResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/src/main/java/org/noodle/controller/NoodlePostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/src/main/java/org/noodle/service/ApplicationContextAwareNoodle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-rest-service-basic/src/main/java/org/noodle/service/NoodlePostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-serialize-util/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-serialize-util/build/classes/java/main/org/noodle/util/convertor/Object2JavaBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-serialize-util/build/classes/java/main/org/noodle/util/json/JsonParser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-serialize-util/build/libs/noodle-serialize-util-1.0.0.alpha-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-serialize-util/build/tmp/jar/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-serialize-util/src/main/java/org/noodle/util/convertor/Object2JavaBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noodle-serialize-util/src/main/java/org/noodle/util/json/JsonParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/ApplicationReciteWords.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/bean/user/info/UserInfoQueryRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/bean/user/password/UserPasswordCheckRequest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/controller/HealthzController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/DictionaryMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/ExerciseMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/ExerciseWordsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/ReciteMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/ReciteWordsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/ReviewMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/ReviewWordsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/UserInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/UserPasswordMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/VocabularyMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/mapper/WordsMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/Dictionary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/Exercise.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/ExerciseWords.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/Recite.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/ReciteWords.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/Review.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/ReviewWords.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/UserPassword.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/Vocabulary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/orm/model/Words.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/service/user/info/UserInfoQueryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/main/org/noodle/service/user/password/UserPasswordCheckService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/test/org/noodle/service/user/info/UserInfoQueryServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/classes/java/test/org/noodle/service/user/password/UserPasswordCheckServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/reports/tests/test/classes/org.noodle.service.user.password.UserPasswordCheckServiceTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/reports/tests/test/css/base-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/reports/tests/test/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/reports/tests/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/reports/tests/test/js/report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/reports/tests/test/packages/org.noodle.service.user.password.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/DictionaryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/ExerciseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/ExerciseWordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/ReciteMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/ReciteWordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/ReviewMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/ReviewWordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/UserPasswordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/VocabularyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/resources/main/mybatis/mapping/WordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/test-results/test/TEST-org.noodle.service.user.password.UserPasswordCheckServiceTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/ApplicationReciteWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/bean/user/info/UserInfoQueryRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/bean/user/password/UserPasswordCheckRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/controller/HealthzController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/DictionaryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/ExerciseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/ExerciseWordsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/ReciteMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/ReciteWordsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/ReviewMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/ReviewWordsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/UserInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/UserPasswordMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/VocabularyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/mapper/WordsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/Dictionary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/Exercise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/ExerciseWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/Recite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/ReciteWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/Review.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/ReviewWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/UserPassword.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/Vocabulary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/orm/model/Words.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/service/user/info/UserInfoQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/java/org/noodle/service/user/password/UserPasswordCheckService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/DictionaryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/ExerciseMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/ExerciseWordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/ReciteMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/ReciteWordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/ReviewMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/ReviewWordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/UserPasswordMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/VocabularyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/main/resources/mybatis/mapping/WordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/test/java/org/noodle/service/user/info/UserInfoQueryServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recite-words/src/test/java/org/noodle/service/user/password/UserPasswordCheckServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/recite-words">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/noodle-rest-service-basic">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="recite-words" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="recite-words" type="f1a62948:ProjectNode" />
+                <item name="noodle-rest-service-basic" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="recite-words" type="f1a62948:ProjectNode" />
+                <item name="noodle-rest-service-basic" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="recite-words" type="f1a62948:ProjectNode" />
+                <item name="noodle-serialize-util" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="recite-words" type="f1a62948:ProjectNode" />
+                <item name="noodle-serialize-util" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="recite-words" type="f1a62948:ProjectNode" />
+                <item name="recite-words" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="recite-words" type="f1a62948:ProjectNode" />
+                <item name="recite-words" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit3 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kMXzky24rYMHZBEoZMLC1tKlOr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/recite-words/src/main/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/recite-words/src/main/resources" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/recite-words/src/main/resources/mybatis" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.noodle.service.user.password" />
+      <recent name="org.noodle.service.user.info" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.noodle.service" />
+      <recent name="org.noodle" />
+      <recent name="org.noodle.autoconfig" />
+      <recent name="org.noodle.controller" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.UserPasswordCheckServiceTest.testExecute">
+    <configuration name="SimpleSnowFlakeImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.noodle.util.id.SimpleSnowFlakeImpl" />
+      <module name="recite-words.noodle-id-generator.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.noodle.util.id.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserInfoQueryServiceTest.testExecute" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;org.noodle.service.user.info.UserInfoQueryServiceTest.testExecute&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":recite-words:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserPasswordCheckServiceTest.testExecute" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;org.noodle.service.user.password.UserPasswordCheckServiceTest.testExecute&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":recite-words:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserPasswordCheckServiceTest.testProtobuf" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;org.noodle.service.user.password.UserPasswordCheckServiceTest.testProtobuf&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":recite-words:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ApplicationReciteWords" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="recite-words.recite-words.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.noodle.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.noodle.ApplicationReciteWords" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <envs>
+        <env name="SERVICE_PORT" value="30005" />
+        <env name="SERVICE_CONTEXT_PATH" value="/release" />
+        <env name="JDBC_URL" value="jdbc:postgresql://49.232.217.245:5432/recite_words" />
+        <env name="JDBC_USERNAME" value="recite_words" />
+        <env name="JDBC_PASSWORD" value="ckone90776" />
+        <env name="JDBC_DRIVER_CLASS_NAME" value="org.postgresql.Driver" />
+        <env name="JDBC_VALIDATION_QUERY" value="select 1" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SimpleSnowFlakeImpl" />
+      <item itemvalue="Gradle.UserInfoQueryServiceTest.testExecute" />
+      <item itemvalue="Gradle.UserPasswordCheckServiceTest.testExecute" />
+      <item itemvalue="Gradle.UserPasswordCheckServiceTest.testProtobuf" />
+      <item itemvalue="Spring Boot.ApplicationReciteWords" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.UserPasswordCheckServiceTest.testExecute" />
+        <item itemvalue="Spring Boot.ApplicationReciteWords" />
+        <item itemvalue="Gradle.UserPasswordCheckServiceTest.testProtobuf" />
+        <item itemvalue="Gradle.UserInfoQueryServiceTest.testExecute" />
+        <item itemvalue="Application.SimpleSnowFlakeImpl" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5a29b73-913a-4eb0-ba6a-05bd6fab4a3c" name="Default Changelist" comment="" />
+      <created>1605511698249</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605511698249</updated>
+      <workItem from="1605511708320" duration="4074000" />
+      <workItem from="1605846417152" duration="24454000" />
+      <workItem from="1606093587905" duration="22480000" />
+      <workItem from="1606199686427" duration="4141000" />
+      <workItem from="1606215331840" duration="1214000" />
+      <workItem from="1606264447892" duration="102000" />
+      <workItem from="1607069188651" duration="11000" />
+      <workItem from="1607069757526" duration="28000" />
+      <workItem from="1607087866907" duration="959000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1653" y="21" width="1026" height="857" key="#Project_Structure" timestamp="1606200153509">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1653" y="21" width="1026" height="857" key="#Project_Structure/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606200153509" />
+    <state x="1629" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606132428952">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1629" y="102" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606132428952" />
+    <state x="1978" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1606134664146">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1978" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606134664146" />
+    <state x="1654" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606136478059">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1654" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606136478059" />
+    <state x="1903" y="193" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606133236112">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1903" y="193" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606133236112" />
+    <state x="1790" y="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1606131538561">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1790" y="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606131538561" />
+    <state width="494" height="485" key="DebuggerActiveHint" timestamp="1606201007006">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="494" height="485" key="DebuggerActiveHint/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606201007006" />
+    <state x="2011" y="208" width="789" height="484" key="EnvironmentVariablesDialog" timestamp="1606132428679">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="2011" y="208" width="789" height="484" key="EnvironmentVariablesDialog/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606132428679" />
+    <state width="1554" height="404" key="GridCell.Tab.0.bottom" timestamp="1606212926017">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="404" key="GridCell.Tab.0.bottom/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606212926017" />
+    <state width="1554" height="404" key="GridCell.Tab.0.center" timestamp="1606212926017">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="404" key="GridCell.Tab.0.center/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606212926017" />
+    <state width="1554" height="404" key="GridCell.Tab.0.left" timestamp="1606212926017">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="404" key="GridCell.Tab.0.left/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606212926017" />
+    <state width="1554" height="404" key="GridCell.Tab.0.right" timestamp="1606212926017">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="404" key="GridCell.Tab.0.right/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606212926017" />
+    <state width="1554" height="404" key="GridCell.Tab.1.bottom" timestamp="1606212926010">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="404" key="GridCell.Tab.1.bottom/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606212926010" />
+    <state width="1554" height="404" key="GridCell.Tab.1.center" timestamp="1606212926010">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="404" key="GridCell.Tab.1.center/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606212926010" />
+    <state width="1554" height="404" key="GridCell.Tab.1.left" timestamp="1606212926010">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="404" key="GridCell.Tab.1.left/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606212926010" />
+    <state width="1554" height="404" key="GridCell.Tab.1.right" timestamp="1606212926010">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="404" key="GridCell.Tab.1.right/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606212926010" />
+    <state width="1554" height="278" key="GridCell.Tab.2.bottom" timestamp="1606199629292">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="278" key="GridCell.Tab.2.bottom/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606199629292" />
+    <state width="1554" height="278" key="GridCell.Tab.2.center" timestamp="1606199629292">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="278" key="GridCell.Tab.2.center/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606199629292" />
+    <state width="1554" height="278" key="GridCell.Tab.2.left" timestamp="1606199629292">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="278" key="GridCell.Tab.2.left/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606199629292" />
+    <state width="1554" height="278" key="GridCell.Tab.2.right" timestamp="1606199629292">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state width="1554" height="278" key="GridCell.Tab.2.right/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606199629292" />
+    <state x="1704" y="79" key="SettingsEditor" timestamp="1605853297154">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1704" y="79" key="SettingsEditor/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1605853297154" />
+    <state x="1907" y="266" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1606135737285">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1907" y="266" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1606135737285" />
+    <state x="1853" y="194" width="626" height="512" key="find.popup" timestamp="1605855470426">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="1853" y="194" width="626" height="512" key="find.popup/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1605855470426" />
+    <state x="1366" y="0" width="1366" height="714" key="new project wizard" timestamp="1605865650454">
+      <screen x="1366" y="0" width="1600" height="900" />
+    </state>
+    <state x="0" y="0" width="1366" height="714" key="new project wizard/0.0.1366.714/1366.0.1600.900@1366.0.1600.900" timestamp="1605511756360" />
+    <state x="1366" y="0" key="new project wizard/0.0.1366.768/1366.0.1600.900@1366.0.1600.900" timestamp="1605865650454" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/noodle-rest-service-basic/src/main/java/org/noodle/controller/NoodlePostController.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/noodle-rest-service-basic/src/main/java/org/noodle/controller/NoodlePostController.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/noodle-rest-service-basic/src/main/java/org/noodle/controller/NoodlePostController.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

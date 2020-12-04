@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'org.noodle'
+version '1.0.0.alpha-1'
+
+repositories {
+    maven {
+        url 'http://maven.aliyun.com/nexus/content/groups/public/'
+    }
+    maven {
+        url 'http://47.92.99.153:30003/nexus/content/groups/public/'
+    }
+}
+
+dependencies {
+    compile "com.fasterxml.jackson.core:jackson-core:${rootProject.ext.dependsVersionConfig.jacksonMapperVersion}"
+    compile "com.fasterxml.jackson.core:jackson-databind:${rootProject.ext.dependsVersionConfig.jacksonMapperVersion}"
+    compile "com.fasterxml.jackson.core:jackson-annotations:${rootProject.ext.dependsVersionConfig.jacksonMapperVersion}"
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
