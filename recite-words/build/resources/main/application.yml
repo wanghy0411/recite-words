@@ -1,0 +1,26 @@
+server:
+  port: ${SERVICE_PORT}
+  servlet:
+    context-path: ${SERVICE_CONTEXT_PATH}/fy-recite-words
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: ${JDBC_URL}
+    password: ${JDBC_PASSWORD}
+    username: ${JDBC_USERNAME}
+    driver-class-name: ${JDBC_DRIVER_CLASS_NAME}
+    hikari:
+      pool-name: hikari-recite-words
+      connection-test-query: ${JDBC_VALIDATION_QUERY}
+      minimum-idle: 5
+      maximum-pool-size: 10
+      auto-commit: false
+      read-only: false
+      connection-timeout: 30000
+      validation-timeout: 30000
+      idle-timeout: 3600000
+      max-lifetime: 86400000
+mybatis:
+  mapper-locations: classpath:/mybatis/mapping/*Mapper.xml
+  configuration:
+    cache-enabled: true
