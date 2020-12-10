@@ -1,6 +1,0 @@
-�15:09:57.946 [Test worker] DEBUG org.springframework.web.client.RestTemplate - HTTP POST http://127.0.0.1:30005/release/fy-recite-words/post
-}15:09:58.055 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Accept=[application/json, application/*+json]
-�15:09:58.083 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Writing [org.noodle.beans.NoodleApiParam@2f500063] with org.springframework.http.converter.json.MappingJackson2HttpMessageConverter
-_15:09:58.799 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Response 200 OK
-|15:09:58.804 [Test worker] DEBUG org.springframework.web.client.RestTemplate - Reading to [org.noodle.beans.NoodleResponse]
-�{"clientRequestNo":null,"serverRequestNo":528630499811746600,"success":false,"errorMessage":"用户528350233536979752无密码记录信息","errorCode":"-1","data":null}
