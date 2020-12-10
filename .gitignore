@@ -27,3 +27,6 @@ info.properties
 service/.gradle/
 service/.idea/
 service/gradle/
+client/ReciteWords/.vs/
+client/ReciteWords/ReciteWords/bin/
+client/ReciteWords/ReciteWords/obj/
