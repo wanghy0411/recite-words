@@ -30,3 +30,6 @@ service/gradle/
 client/ReciteWords/.vs/
 client/ReciteWords/ReciteWords/bin/
 client/ReciteWords/ReciteWords/obj/
+client/ReciteWords/packages/
+client/ReciteWords/sdk/bin/
+client/ReciteWords/sdk/obj/

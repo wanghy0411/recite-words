@@ -22,6 +22,7 @@ dependencies {
     compile("com.github.pagehelper:pagehelper-spring-boot-starter:$rootProject.ext.dependsVersionConfig.mybatisPageHelperVersion")
     compile "org.apache.logging.log4j:log4j-api:${rootProject.ext.dependsVersionConfig.log4jVersion}"
     compile "org.apache.logging.log4j:log4j-core:${rootProject.ext.dependsVersionConfig.log4jVersion}"
+    compile "cn.hutool:hutool-core:$rootProject.ext.dependsVersionConfig.hutoolVersion"
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

@@ -1,6 +1,6 @@
 package org.noodle.autoconfig;
 
-import org.noodle.util.id.SimpleSnowFlakeImpl;
+import org.noodle.util.id.RandomMachineSnowFlakeImpl;
 import org.noodle.util.id.SnowFlake;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -27,7 +27,7 @@ public class SnowFlakeConfig {
         }
 
         if (snowFlake==null) {
-            snowFlake = new SimpleSnowFlakeImpl();
+            snowFlake = new RandomMachineSnowFlakeImpl();
         }
         return snowFlake;
     }

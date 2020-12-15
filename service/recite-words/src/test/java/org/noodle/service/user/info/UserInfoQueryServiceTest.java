@@ -15,7 +15,7 @@ public class UserInfoQueryServiceTest extends TestCase {
 
         NoodleApiParam noodleApiParam = new NoodleApiParam();
         noodleApiParam.setApiMethodName("user.info.query");
-        noodleApiParam.setData(request);
+        noodleApiParam.setRequestData(request);
 
         RestTemplate restTemplate = new RestTemplate();
         NoodleResponse response = restTemplate.postForObject("http://127.0.0.1:30005/release/fy-recite-words/post", noodleApiParam, NoodleResponse.class);
