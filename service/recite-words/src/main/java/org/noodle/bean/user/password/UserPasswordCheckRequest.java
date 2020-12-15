@@ -1,10 +1,12 @@
 package org.noodle.bean.user.password;
 
+import org.noodle.beans.NoodleRequest;
+
 /**
  * 用户密码验证服务
  * @author wanghy
  */
-public class UserPasswordCheckRequest {
+public class UserPasswordCheckRequest extends NoodleRequest {
     /**
      * 用户id
      */

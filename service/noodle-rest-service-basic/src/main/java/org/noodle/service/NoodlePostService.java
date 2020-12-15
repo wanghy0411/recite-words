@@ -1,8 +1,10 @@
 package org.noodle.service;
 
 import org.noodle.beans.NoodleException;
-import org.noodle.beans.NoodleApiParam;
+import org.noodle.beans.NoodleRequest;
 
-public interface NoodlePostService {
-    Object execute(NoodleApiParam request) throws NoodleException;
+public interface NoodlePostService<T extends NoodleRequest, R> {
+    Class<T> getRequestClass();
+
+    R execute(T request) throws NoodleException;
 }
