@@ -10,18 +10,18 @@ public class UserPasswordCheckRequest extends NoodleRequest {
     /**
      * 用户id
      */
-    private Long userId;
+    private String nick;
     /**
      * 用户密码
      */
     private String password;
 
-    public Long getUserId() {
-        return userId;
+    public String getNick() {
+        return nick;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setNick(String nick) {
+        this.nick = nick;
     }
 
     public String getPassword() {

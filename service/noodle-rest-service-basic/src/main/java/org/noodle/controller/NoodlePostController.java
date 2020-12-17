@@ -38,12 +38,10 @@ public class NoodlePostController {
      * @param noodleApiParam 接口入参
      * @return T 接口返回值信息
      */
-    @SuppressWarnings({"rawtypes","uncheck"})
+    @SuppressWarnings({"rawtypes"})
     @CrossOrigin
     @PostMapping("/post")
     public NoodleResponse post(@RequestBody NoodleApiParam noodleApiParam) {
-
-
         NoodleResponse response = new NoodleResponse();
         String clientRequestNo = null;
         Long serverRequestNo = null;
@@ -52,16 +50,18 @@ public class NoodlePostController {
             //执行开始时间
             noodleApiParam.setStartTime(System.currentTimeMillis());
 
+            //取服务端调用的唯一id
+            serverRequestNo = snowFlake.nextId();
+
             //基本参数验证
             Assert.isTrue(StringUtils.hasText(noodleApiParam.getApiMethodName()), "没有传入接口方法名");
             Assert.notNull(noodleApiParam.getRequestData(), "没有传入调用串");
 
             NoodlePostService service = ApplicationContextAwareNoodle.getBean(noodleApiParam.getApiMethodName());
 
-//            NoodleRequest request = (NoodleRequest) Object2JavaBean.toBean(noodleApiParam.getRequestData(), service.getRequestClass());
             NoodleRequest request = (NoodleRequest) Convert.convert(service.getRequestClass(), noodleApiParam.getRequestData());
+            request.setUserId(noodleApiParam.getUserId());
             clientRequestNo = request.getClientRequestNo();
-            serverRequestNo = snowFlake.nextId();
 
             //日志信息
             requestMarker = MarkerManager.getMarker(clientRequestNo+":"+serverRequestNo);
@@ -107,6 +107,7 @@ public class NoodlePostController {
         }
         finally {
             noodleApiParam.setEndTime(System.currentTimeMillis());
+            noodleApiParam.setServerRequestNo(serverRequestNo);
             response.setClientRequestNo(clientRequestNo);
             response.setServerRequestNo(serverRequestNo);
         }

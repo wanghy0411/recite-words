@@ -11,8 +11,8 @@ public class UserPasswordCheckServiceTest extends TestCase {
 
     public void testExecute() {
         UserPasswordCheckRequest request = new UserPasswordCheckRequest();
-        request.setUserId(528350233536979752L);
-        request.setPassword("test");
+        request.setNick("wangyx");
+        request.setPassword("wangyx20170817");
 
         NoodleApiParam noodleApiParam = new NoodleApiParam();
         noodleApiParam.setApiMethodName("user.password.check");

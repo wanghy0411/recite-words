@@ -54,6 +54,8 @@ dependencies {
 
     compile ("org.postgresql:postgresql:${rootProject.ext.dependsVersionConfig.pgsqlJdbcVersion}")
 
+    compile "org.springframework.boot:spring-boot-devtools:$rootProject.ext.dependsVersionConfig.springBootVersion"
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 
     mybatisGenerator group: 'org.mybatis.generator', name: 'mybatis-generator-maven-plugin', version: '1.3.6'

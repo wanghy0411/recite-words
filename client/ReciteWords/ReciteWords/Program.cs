@@ -15,7 +15,16 @@ namespace ReciteWords
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            //登录
+            using (FormLogin formLogin = new FormLogin())
+            {
+                if (formLogin.ShowDialog() != DialogResult.OK)
+                    return;
+            }
+
+            //运行
+            Application.Run(new FormMain());
         }
     }
 }

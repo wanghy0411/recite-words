@@ -10,6 +10,7 @@ namespace sdk
     {
         private readonly String Url;
         private readonly String AccessToken;
+        private readonly long UserId;
         private readonly int Timeout;
         private readonly int ReadWriteTimeout;
 
@@ -18,17 +19,19 @@ namespace sdk
         /// </summary>
         /// <param name="Url">noodle框架服务地址</param>
         /// <param name="AccessToken">token</param>
+        /// <param name="UserId">登录用户id, 完善后可不再需要</param>
         /// <param name="Timeout">等待响应的超时设置ms</param>
         /// <param name="ReadWriteTimeout">读写数据的超时设置</param>
-        public NoodleTokenClient(String Url, String AccessToken, int Timeout=3000, int ReadWriteTimeout=5000)
+        public NoodleTokenClient(String Url, String AccessToken, long UserId, int Timeout=3000, int ReadWriteTimeout=5000)
         {
             this.Url = Url;
             this.AccessToken = AccessToken;
+            this.UserId = UserId;
             this.Timeout = Timeout;
             this.ReadWriteTimeout = ReadWriteTimeout;
         }
 
-        public NoodleResponse<T> DoPost<T>(NoodleRequest<T> request)
+        public T DoPost<T>(NoodleRequest<T> request)
         {
             if (string.IsNullOrEmpty(request.ApiMethodName))
             {
@@ -40,9 +43,30 @@ namespace sdk
 
             NoodleApiParam noodlePostParams = new NoodleApiParam();
             noodlePostParams.ApiMethodName = request.ApiMethodName;
-            noodlePostParams.AccessToken = AccessToken;
+            noodlePostParams.UserId = UserId;
             noodlePostParams.Timestamp = Convert.ToInt64((DateTime.Now - new DateTime(1970, 1, 1, 0, 0, 0, 0)).TotalMilliseconds);
             noodlePostParams.RequestData = request;
+
+            JsonSerializerSettings settings = new JsonSerializerSettings
+            {
+                ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver()
+            };
+            string postJson = JsonConvert.SerializeObject(noodlePostParams, Formatting.Indented, settings);
+
+            NoodleResponse<T> response;
+            string responseString = DoPost(postJson);
+
+            response = JsonConvert.DeserializeObject<NoodleResponse<T>>(responseString, settings);
+
+            return response.Data;
+        }
+
+        private String DoPost(string postJson)
+        {
+            Stream requestStream = null;
+            Stream responseStream = null;
+            StreamReader reader = null;
+            HttpWebResponse response = null;
 
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create(Url);
             req.ServicePoint.Expect100Continue = false;
@@ -52,41 +76,28 @@ namespace sdk
             req.ReadWriteTimeout = ReadWriteTimeout;
             req.ContentType = "application/json";
 
-            JsonSerializerSettings settings = new JsonSerializerSettings
-            {
-                ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver()
-            };
-            string postJson = JsonConvert.SerializeObject(noodlePostParams, Formatting.Indented, settings);
-            byte[] postData = Encoding.UTF8.GetBytes(postJson);
-            Stream reqStream = req.GetRequestStream();
-            reqStream.Write(postData, 0, postData.Length);
-            reqStream.Close();
-
-            HttpWebResponse rsp = (HttpWebResponse)req.GetResponse();
-            Encoding encoding = Encoding.GetEncoding("utf-8");
-            string responseString = GetResponseAsString(rsp, encoding);
-
-            return JsonConvert.DeserializeObject<NoodleResponse<T>>(responseString, settings);
-        }
-
-        private String GetResponseAsString(HttpWebResponse rsp, Encoding encoding)
-        {
-            Stream stream = null;
-            StreamReader reader = null;
-
             try
             {
+                byte[] postData = Encoding.UTF8.GetBytes(postJson);
+                requestStream = req.GetRequestStream();
+                requestStream.Write(postData, 0, postData.Length);
+                requestStream.Close();
+
+                response = (HttpWebResponse)req.GetResponse();
+                Encoding encoding = Encoding.GetEncoding("utf-8");
+
                 // 以字符流的方式读取HTTP响应
-                stream = rsp.GetResponseStream();
-                reader = new StreamReader(stream, encoding);
+                responseStream = response.GetResponseStream();
+                reader = new StreamReader(responseStream, encoding);
                 return reader.ReadToEnd();
             }
             finally
             {
                 // 释放资源
+                if (requestStream != null) requestStream.Close();
                 if (reader != null) reader.Close();
-                if (stream != null) stream.Close();
-                if (rsp != null) rsp.Close();
+                if (responseStream != null) responseStream.Close();
+                if (response != null) response.Close();
             }
         }
     }

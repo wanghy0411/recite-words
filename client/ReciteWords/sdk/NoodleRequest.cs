@@ -21,11 +21,11 @@ namespace sdk
         /// 客户端调用的唯一标识号, 如未指定, sdk会自动设置一个guid作为唯一标识号
         /// 此唯一标识号可作为服务段进行幂等判断的依据
         /// </summary>
-        public abstract string ClientRequestNo { get; set; }
+        public virtual string ClientRequestNo { get; set; }
 
         /// <summary>
         /// 调用服务端的
         /// </summary>
-        public abstract string ApiVersion { get; }
+        public virtual string ApiVersion { get => "1.0"; }
     }
 }

@@ -1,5 +1,9 @@
 package org.noodle.beans;
 
+/**
+ * noodle服务框架request基类
+ * @author wanghy
+ */
 public class NoodleRequest {
     /**
      * 调用端传入的唯一标识符
@@ -16,7 +20,7 @@ public class NoodleRequest {
     /**
      * 接口调用人员
      */
-    protected String operatorId;
+    protected Long userId;
 
     public String getClientRequestNo() {
         return clientRequestNo;
@@ -42,11 +46,11 @@ public class NoodleRequest {
         this.apiVersion = apiVersion;
     }
 
-    public String getOperatorId() {
-        return operatorId;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setOperatorId(String operatorId) {
-        this.operatorId = operatorId;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }

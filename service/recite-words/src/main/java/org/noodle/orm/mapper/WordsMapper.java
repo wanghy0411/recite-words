@@ -43,4 +43,12 @@ public interface WordsMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Words record);
+
+    /*-------------------------------------------------------*/
+
+    /**
+     * 根据字典id取单词列表
+     * @param dictionaryId 字典id
+     */
+    List<Words> selectByDictionaryId(Long dictionaryId);
 }

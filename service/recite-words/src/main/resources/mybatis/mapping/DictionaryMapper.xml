@@ -59,4 +59,25 @@
     select id, name, publisher, valid_flag, public_flag
     from dictionary
   </select>
+  <select id="selectAllByUser" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      查询用户所有关联的词典
+    -->
+    select id, name, publisher, valid_flag, public_flag
+    from dictionary
+    where exists (select 1 from user_dictionary
+                   where user_dictionary.dictionary_id=dictionary.id
+                     and user_dictionary.user_id = #{userId,jdbcType=BIGINT})
+  </select>
+  <select id="selectValidByUser" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      查询用户关联的有效词典
+    -->
+    select id, name, publisher, valid_flag, public_flag
+    from dictionary
+    where valid_flag = 'Y'
+    and exists (select 1 from user_dictionary
+    where user_dictionary.dictionary_id=dictionary.id
+    and user_dictionary.user_id = #{userId,jdbcType=BIGINT})
+  </select>
 </mapper>

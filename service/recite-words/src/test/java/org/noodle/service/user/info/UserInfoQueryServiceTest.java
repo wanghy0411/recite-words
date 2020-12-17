@@ -11,10 +11,10 @@ public class UserInfoQueryServiceTest extends TestCase {
 
     public void testExecute() {
         UserInfoQueryRequest request = new UserInfoQueryRequest();
-        request.setNick("wangyx");
 
         NoodleApiParam noodleApiParam = new NoodleApiParam();
         noodleApiParam.setApiMethodName("user.info.query");
+        noodleApiParam.setUserId(126813427162360833L);
         noodleApiParam.setRequestData(request);
 
         RestTemplate restTemplate = new RestTemplate();
