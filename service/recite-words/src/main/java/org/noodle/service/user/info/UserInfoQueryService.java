@@ -25,6 +25,6 @@ public class UserInfoQueryService implements NoodlePostService<UserInfoQueryRequ
 
     @Override
     public UserInfo execute(UserInfoQueryRequest request) throws NoodleException {
-        return userInfoMapper.selectByNick(request.getNick());
+        return userInfoMapper.selectByPrimaryKey(request.getUserId());
     }
 }

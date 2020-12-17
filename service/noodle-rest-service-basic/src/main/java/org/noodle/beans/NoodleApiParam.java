@@ -12,6 +12,12 @@ public class NoodleApiParam {
     protected String apiMethodName;
 
     /**
+     * 接口调用人员, 可以在gateway处加入token或cookie判断后统一写入
+     * 如未加统一判断输入, 可先兼容前端输入
+     */
+    protected Long userId;
+
+    /**
      * 客户端时间戳
      */
     protected Long timestamp;
@@ -25,6 +31,11 @@ public class NoodleApiParam {
      * 执行结束时间
      */
     protected Long endTime;
+
+    /**
+     * 服务端赋予的唯一标识符
+     */
+    protected Long serverRequestNo;
 
     /**
      * 传入的数据信息
@@ -49,6 +60,14 @@ public class NoodleApiParam {
         this.apiMethodName = apiMethodName;
     }
 
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
     public Long getTimestamp() {
         return timestamp;
     }
@@ -71,6 +90,14 @@ public class NoodleApiParam {
 
     public void setEndTime(Long endTime) {
         this.endTime = endTime;
+    }
+
+    public Long getServerRequestNo() {
+        return serverRequestNo;
+    }
+
+    public void setServerRequestNo(Long serverRequestNo) {
+        this.serverRequestNo = serverRequestNo;
     }
 
     public Object getRequestData() {

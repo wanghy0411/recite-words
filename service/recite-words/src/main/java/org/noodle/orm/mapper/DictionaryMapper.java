@@ -43,4 +43,18 @@ public interface DictionaryMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Dictionary record);
+
+    /*------------------------------------------------------------*/
+
+    /**
+     * 查询用户所有关联的词典
+     * @param userId 用户id
+     */
+    List<Dictionary> selectAllByUser(Long userId);
+
+    /**
+     * 查询用户关联的有效词典
+     * @param userId 用户id
+     */
+    List<Dictionary> selectValidByUser(Long userId);
 }

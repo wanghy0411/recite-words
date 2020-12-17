@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dictionary\delete\DictionaryDeleteRequest.cs" />
+    <Compile Include="dictionary\Dictionary.cs" />
+    <Compile Include="dictionary\list\DictionaryListRequest.cs" />
+    <Compile Include="dictionary\save\DictionarySaveRequest.cs" />
+    <Compile Include="dictionary\select\DictionarySelectRequest.cs" />
+    <Compile Include="id\NoodleIdGeneratorRequest.cs" />
     <Compile Include="NoodleApiParam.cs" />
     <Compile Include="NoodleRequest.cs" />
     <Compile Include="NoodleResponse.cs" />
@@ -53,12 +59,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="user\info\UserInfoQueryDto.cs" />
     <Compile Include="user\info\UserInfoQueryRequest.cs" />
+    <Compile Include="user\password\UserPasswordCheckRequest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="user\password\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

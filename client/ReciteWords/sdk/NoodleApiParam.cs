@@ -16,9 +16,9 @@ namespace sdk
         public string ApiMethodName { get; set; }
 
         /// <summary>
-        /// 授权token
+        /// 接口调用用户id, 完善后应该是不用传
         /// </summary>
-        public string AccessToken { get; set; }
+        public long UserId { get; set; }
 
         /// <summary>
         /// 客户端时间戳
