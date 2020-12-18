@@ -36,6 +36,7 @@ namespace ReciteWords.vocabulary
             this.DictionaryValidFlag = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.DictionaryPublicFlag = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonSelect = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
@@ -47,7 +48,6 @@ namespace ReciteWords.vocabulary
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxDictionary = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonSelect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDictionary)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -134,6 +134,16 @@ namespace ReciteWords.vocabulary
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(834, 50);
             this.panel1.TabIndex = 1;
+            // 
+            // buttonSelect
+            // 
+            this.buttonSelect.Location = new System.Drawing.Point(93, 12);
+            this.buttonSelect.Name = "buttonSelect";
+            this.buttonSelect.Size = new System.Drawing.Size(75, 23);
+            this.buttonSelect.TabIndex = 3;
+            this.buttonSelect.Text = "公用字典";
+            this.buttonSelect.UseVisualStyleBackColor = true;
+            this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
             // 
             // buttonDelete
             // 
@@ -238,16 +248,6 @@ namespace ReciteWords.vocabulary
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "字典";
-            // 
-            // buttonSelect
-            // 
-            this.buttonSelect.Location = new System.Drawing.Point(93, 12);
-            this.buttonSelect.Name = "buttonSelect";
-            this.buttonSelect.Size = new System.Drawing.Size(75, 23);
-            this.buttonSelect.TabIndex = 3;
-            this.buttonSelect.Text = "公用字典";
-            this.buttonSelect.UseVisualStyleBackColor = true;
-            this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
             // 
             // FormDictionary
             // 
