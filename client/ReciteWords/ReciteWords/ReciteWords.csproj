@@ -73,6 +73,12 @@
     <Compile Include="vocabulary\FormDictionary.Designer.cs">
       <DependentUpon>FormDictionary.cs</DependentUpon>
     </Compile>
+    <Compile Include="vocabulary\FormDictionarySelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vocabulary\FormDictionarySelect.Designer.cs">
+      <DependentUpon>FormDictionarySelect.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +97,9 @@
     </Compile>
     <EmbeddedResource Include="vocabulary\FormDictionary.resx">
       <DependentUpon>FormDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vocabulary\FormDictionarySelect.resx">
+      <DependentUpon>FormDictionarySelect.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
