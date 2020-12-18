@@ -76,8 +76,18 @@
     select id, name, publisher, valid_flag, public_flag
     from dictionary
     where valid_flag = 'Y'
-    and exists (select 1 from user_dictionary
-    where user_dictionary.dictionary_id=dictionary.id
-    and user_dictionary.user_id = #{userId,jdbcType=BIGINT})
+    and exists ( select 1 from user_dictionary
+                  where user_dictionary.dictionary_id=dictionary.id
+                  and user_dictionary.user_id = #{userId,jdbcType=BIGINT})
+  </select>
+  <select id="selectPublicByCondition" parameterType="java.lang.String" resultMap="BaseResultMap">
+    <!--
+      根据名称条件查询有效的公用词典
+    -->
+    select id, name, publisher, valid_flag, public_flag
+    from dictionary
+    where valid_flag = 'Y'
+    and public_flag = 'Y'
+    and name like #{nameCondition,jdbcType=VARCHAR}
   </select>
 </mapper>

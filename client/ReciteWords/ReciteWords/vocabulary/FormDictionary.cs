@@ -182,5 +182,19 @@ namespace ReciteWords.vocabulary
                 addDictionary();
             }
         }
+
+        private void buttonSelect_Click(object sender, EventArgs e)
+        {
+            FormDictionarySelect form = new FormDictionarySelect();
+            form.ShowDialog(this);
+
+            DictionaryListRequest request = new DictionaryListRequest();
+            request.ClientRequestNo = Guid.NewGuid().ToString("N");
+
+            List<Dictionary> dictionaries = _noodleTokenClient.DoPost(request);
+            _dtDictionary = DataTableHelper.ToDataTable<Dictionary>(dictionaries);
+
+            dataGridViewDictionary.DataSource = _dtDictionary;
+        }
     }
 }

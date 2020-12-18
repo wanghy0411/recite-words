@@ -1,12 +1,12 @@
 package org.noodle.bean.dictionary.delete;
 
-import org.noodle.beans.NoodlePagedRequest;
+import org.noodle.beans.NoodleRequest;
 
 /**
  * 字典删除服务
  * @author wanghy
  */
-public class DictionaryDeleteRequest extends NoodlePagedRequest {
+public class DictionaryDeleteRequest extends NoodleRequest {
     /**
      * 待删除的字典id
      */

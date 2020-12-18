@@ -30,7 +30,13 @@ namespace ReciteWords.vocabulary
         private void InitializeComponent()
         {
             this.dataGridViewDictionary = new System.Windows.Forms.DataGridView();
+            this.DictionaryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DictionaryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DictionaryPublisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DictionaryValidFlag = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.DictionaryPublicFlag = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -41,12 +47,7 @@ namespace ReciteWords.vocabulary
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxDictionary = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.DictionaryId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DictionaryName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DictionaryPublisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DictionaryValidFlag = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.DictionaryPublicFlag = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.buttonDelete = new System.Windows.Forms.Button();
+            this.buttonSelect = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDictionary)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -74,8 +75,57 @@ namespace ReciteWords.vocabulary
             this.dataGridViewDictionary.CurrentCellChanged += new System.EventHandler(this.dataGridViewDictionary_CurrentCellChanged);
             this.dataGridViewDictionary.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dataGridViewDictionary_RowStateChanged);
             // 
+            // DictionaryId
+            // 
+            this.DictionaryId.DataPropertyName = "Id";
+            this.DictionaryId.HeaderText = "DictionaryId";
+            this.DictionaryId.Name = "DictionaryId";
+            this.DictionaryId.ReadOnly = true;
+            this.DictionaryId.Visible = false;
+            // 
+            // DictionaryName
+            // 
+            this.DictionaryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.DictionaryName.DataPropertyName = "Name";
+            this.DictionaryName.HeaderText = "词典";
+            this.DictionaryName.Name = "DictionaryName";
+            this.DictionaryName.ReadOnly = true;
+            this.DictionaryName.Width = 54;
+            // 
+            // DictionaryPublisher
+            // 
+            this.DictionaryPublisher.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.DictionaryPublisher.DataPropertyName = "Publisher";
+            this.DictionaryPublisher.HeaderText = "出版社";
+            this.DictionaryPublisher.Name = "DictionaryPublisher";
+            this.DictionaryPublisher.ReadOnly = true;
+            this.DictionaryPublisher.Width = 66;
+            // 
+            // DictionaryValidFlag
+            // 
+            this.DictionaryValidFlag.DataPropertyName = "ValidFlag";
+            this.DictionaryValidFlag.FalseValue = "N";
+            this.DictionaryValidFlag.HeaderText = "启用";
+            this.DictionaryValidFlag.Name = "DictionaryValidFlag";
+            this.DictionaryValidFlag.ReadOnly = true;
+            this.DictionaryValidFlag.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.DictionaryValidFlag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.DictionaryValidFlag.TrueValue = "Y";
+            // 
+            // DictionaryPublicFlag
+            // 
+            this.DictionaryPublicFlag.DataPropertyName = "PublicFlag";
+            this.DictionaryPublicFlag.FalseValue = "N";
+            this.DictionaryPublicFlag.HeaderText = "公用";
+            this.DictionaryPublicFlag.Name = "DictionaryPublicFlag";
+            this.DictionaryPublicFlag.ReadOnly = true;
+            this.DictionaryPublicFlag.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.DictionaryPublicFlag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.DictionaryPublicFlag.TrueValue = "Y";
+            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.buttonSelect);
             this.panel1.Controls.Add(this.buttonDelete);
             this.panel1.Controls.Add(this.buttonAdd);
             this.panel1.Controls.Add(this.buttonSave);
@@ -84,6 +134,16 @@ namespace ReciteWords.vocabulary
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(834, 50);
             this.panel1.TabIndex = 1;
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.Location = new System.Drawing.Point(12, 12);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
+            this.buttonDelete.TabIndex = 2;
+            this.buttonDelete.Text = "删除";
+            this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonAdd
             // 
@@ -179,63 +239,15 @@ namespace ReciteWords.vocabulary
             this.label1.TabIndex = 0;
             this.label1.Text = "字典";
             // 
-            // DictionaryId
+            // buttonSelect
             // 
-            this.DictionaryId.DataPropertyName = "Id";
-            this.DictionaryId.HeaderText = "DictionaryId";
-            this.DictionaryId.Name = "DictionaryId";
-            this.DictionaryId.ReadOnly = true;
-            this.DictionaryId.Visible = false;
-            // 
-            // DictionaryName
-            // 
-            this.DictionaryName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.DictionaryName.DataPropertyName = "Name";
-            this.DictionaryName.HeaderText = "词典";
-            this.DictionaryName.Name = "DictionaryName";
-            this.DictionaryName.ReadOnly = true;
-            this.DictionaryName.Width = 54;
-            // 
-            // DictionaryPublisher
-            // 
-            this.DictionaryPublisher.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.DictionaryPublisher.DataPropertyName = "Publisher";
-            this.DictionaryPublisher.HeaderText = "出版社";
-            this.DictionaryPublisher.Name = "DictionaryPublisher";
-            this.DictionaryPublisher.ReadOnly = true;
-            this.DictionaryPublisher.Width = 66;
-            // 
-            // DictionaryValidFlag
-            // 
-            this.DictionaryValidFlag.DataPropertyName = "ValidFlag";
-            this.DictionaryValidFlag.FalseValue = "N";
-            this.DictionaryValidFlag.HeaderText = "启用";
-            this.DictionaryValidFlag.Name = "DictionaryValidFlag";
-            this.DictionaryValidFlag.ReadOnly = true;
-            this.DictionaryValidFlag.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.DictionaryValidFlag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.DictionaryValidFlag.TrueValue = "Y";
-            // 
-            // DictionaryPublicFlag
-            // 
-            this.DictionaryPublicFlag.DataPropertyName = "PublicFlag";
-            this.DictionaryPublicFlag.FalseValue = "N";
-            this.DictionaryPublicFlag.HeaderText = "公用";
-            this.DictionaryPublicFlag.Name = "DictionaryPublicFlag";
-            this.DictionaryPublicFlag.ReadOnly = true;
-            this.DictionaryPublicFlag.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.DictionaryPublicFlag.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.DictionaryPublicFlag.TrueValue = "Y";
-            // 
-            // buttonDelete
-            // 
-            this.buttonDelete.Location = new System.Drawing.Point(12, 12);
-            this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(75, 23);
-            this.buttonDelete.TabIndex = 2;
-            this.buttonDelete.Text = "删除";
-            this.buttonDelete.UseVisualStyleBackColor = true;
-            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
+            this.buttonSelect.Location = new System.Drawing.Point(93, 12);
+            this.buttonSelect.Name = "buttonSelect";
+            this.buttonSelect.Size = new System.Drawing.Size(75, 23);
+            this.buttonSelect.TabIndex = 3;
+            this.buttonSelect.Text = "公用字典";
+            this.buttonSelect.UseVisualStyleBackColor = true;
+            this.buttonSelect.Click += new System.EventHandler(this.buttonSelect_Click);
             // 
             // FormDictionary
             // 
@@ -278,5 +290,6 @@ namespace ReciteWords.vocabulary
         private System.Windows.Forms.DataGridViewCheckBoxColumn DictionaryValidFlag;
         private System.Windows.Forms.DataGridViewCheckBoxColumn DictionaryPublicFlag;
         private System.Windows.Forms.Button buttonDelete;
+        private System.Windows.Forms.Button buttonSelect;
     }
 }

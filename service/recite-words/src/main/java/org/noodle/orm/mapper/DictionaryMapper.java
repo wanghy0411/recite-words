@@ -57,4 +57,11 @@ public interface DictionaryMapper {
      * @param userId 用户id
      */
     List<Dictionary> selectValidByUser(Long userId);
+
+    /**
+     * 根据名称条件查询有效的公用词典
+     * @param nameCondition 名称
+     * @return 有效的公用词典
+     */
+    List<Dictionary> selectPublicByCondition(String nameCondition);
 }

@@ -16,6 +16,9 @@ namespace ReciteWords
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
+            Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
+            AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
+
             //登录
             using (FormLogin formLogin = new FormLogin())
             {
@@ -25,6 +28,15 @@ namespace ReciteWords
 
             //运行
             Application.Run(new FormMain());
+        }
+
+        static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        {
+            MessageBox.Show(e.ExceptionObject.ToString(), "错误信息");
+        }
+        static void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
+        {
+            MessageBox.Show(e.Exception.Message, "错误信息");
         }
     }
 }
