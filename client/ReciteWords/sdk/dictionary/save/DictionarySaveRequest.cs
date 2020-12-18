@@ -6,6 +6,9 @@ using System.Text;
 
 namespace sdk.dictionary.save
 {
+    /// <summary>
+    /// 字典保存服务
+    /// </summary>
     public class DictionarySaveRequest : NoodleRequest<object>
     {
         /// <summary>

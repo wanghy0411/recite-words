@@ -5,6 +5,9 @@ using System.Text;
 
 namespace sdk.dictionary.list
 {
+    /// <summary>
+    /// 字典列表服务
+    /// </summary>
     public class DictionaryListRequest : NoodleRequest<List<Dictionary>>
     {
 

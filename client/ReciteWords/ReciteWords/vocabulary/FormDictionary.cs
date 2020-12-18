@@ -38,30 +38,6 @@ namespace ReciteWords.vocabulary
             dataGridViewDictionary.DataSource = _dtDictionary;
         }
 
-        private void RefreshViewData(List<Dictionary> dictionaries, int currentRow)
-        {
-            dataGridViewDictionary.Rows.Clear();
-            
-            for (int i=0;i< dictionaries.Count; i++)
-            {
-                int rowIndex = dataGridViewDictionary.Rows.Add();
-                RefreshViewData(dictionaries[i], dataGridViewDictionary.Rows[rowIndex], rowIndex);
-            }
-            dataGridViewDictionary.EndEdit();
-            dataGridViewDictionary.Rows.RemoveAt(dictionaries.Count);
-            dataGridViewDictionary.CurrentCell = dataGridViewDictionary.Rows[0].Cells[0];
-        }
-
-        private void RefreshViewData(Dictionary dictionary, DataGridViewRow dr, int rowIndex)
-        {
-            dr.Cells["RowNumber"].Value = rowIndex + 1;
-            dr.Cells["DictionaryId"].Value = dictionary.Id;
-            dr.Cells["DictionaryName"].Value = dictionary.Name;
-            dr.Cells["DictionaryPublisher"].Value = dictionary.Publisher;
-            dr.Cells["DictionaryValidFlag"].Value = dictionary.ValidFlag;
-            dr.Cells["DictionaryPublicFlag"].Value = dictionary.PublicFlag;
-        }
-
         private void buttonSave_Click(object sender, EventArgs e)
         {
             //填充Dictionary对象

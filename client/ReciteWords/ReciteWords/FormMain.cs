@@ -1,4 +1,5 @@
 ﻿using ReciteWords.vocabulary;
+using ReciteWords.words;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,13 +27,9 @@ namespace ReciteWords
 
         private void menuItemWords_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            openFileDialog.Filter = "文本文件(*.txt)|*.txt|所有文件(*.*)|*.*";
-            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string FileName = openFileDialog.FileName;
-            }
+            FormWords childForm = new FormWords();
+            childForm.MdiParent = this;
+            childForm.Show();
         }
 
         private void menuItemExit_Click(object sender, EventArgs e)

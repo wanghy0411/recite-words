@@ -5,6 +5,9 @@ using System.Text;
 
 namespace sdk.dictionary.delete
 {
+    /// <summary>
+    /// 字典删除服务
+    /// </summary>
     public class DictionaryDeleteRequest : NoodleRequest<object>
     {
         /// <summary>

@@ -55,6 +55,7 @@
     <Compile Include="dictionary\select\DictionarySelectRequest.cs" />
     <Compile Include="id\NoodleIdGeneratorRequest.cs" />
     <Compile Include="NoodleApiParam.cs" />
+    <Compile Include="NoodlePagedRequest.cs" />
     <Compile Include="NoodleRequest.cs" />
     <Compile Include="NoodleResponse.cs" />
     <Compile Include="NoodleTokenClient.cs" />
@@ -62,6 +63,10 @@
     <Compile Include="user\info\UserInfoQueryDto.cs" />
     <Compile Include="user\info\UserInfoQueryRequest.cs" />
     <Compile Include="user\password\UserPasswordCheckRequest.cs" />
+    <Compile Include="words\delete\WordsDeleteRequest.cs" />
+    <Compile Include="words\list\WordsListRequest.cs" />
+    <Compile Include="words\save\WordsSaveRequest.cs" />
+    <Compile Include="words\Words.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

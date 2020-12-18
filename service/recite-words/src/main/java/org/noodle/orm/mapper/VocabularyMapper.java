@@ -43,4 +43,12 @@ public interface VocabularyMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Vocabulary record);
+
+    /*----------------------------------------------------*/
+
+    /**
+     * 根据单词id查, 一般用于判断是否存在
+     * @param wordsId 单词id
+     */
+    List<Vocabulary> selectByWordsId(Long wordsId);
 }

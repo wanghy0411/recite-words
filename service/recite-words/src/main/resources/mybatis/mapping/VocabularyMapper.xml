@@ -69,4 +69,13 @@
     review_schedule_time3, review_schedule_time4
     from vocabulary
   </select>
+  <select id="selectByWordsId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      根据单词id查, 一般用于判断是否存在
+    -->
+    select id, user_id, words_id, review_time, review_schedule_time1, review_schedule_time2,
+    review_schedule_time3, review_schedule_time4
+    from vocabulary
+    where words_id = #{wordsId,jdbcType=BIGINT}
+  </select>
 </mapper>
