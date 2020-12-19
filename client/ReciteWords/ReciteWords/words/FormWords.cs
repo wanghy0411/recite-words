@@ -205,7 +205,7 @@ namespace ReciteWords.words
                 return;
             }
 
-            if (MessageBox.Show("是否真的删除字典?", "提示信息", MessageBoxButtons.YesNo) == DialogResult.No)
+            if (MessageBox.Show("是否真的删除单词?", "提示信息", MessageBoxButtons.YesNo) == DialogResult.No)
                 return;
 
             WordsDeleteRequest request = new WordsDeleteRequest();
