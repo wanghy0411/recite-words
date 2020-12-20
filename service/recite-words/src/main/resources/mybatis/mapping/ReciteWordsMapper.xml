@@ -55,4 +55,12 @@
     select id, recite_id, words_id
     from recite_words
   </select>
+  <select id="selectByReciteId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      根据reciteId查
+    -->
+    select id, recite_id, words_id
+    from recite_words
+    where recite_id = #{reciteId,jdbcType=BIGINT}
+  </select>
 </mapper>

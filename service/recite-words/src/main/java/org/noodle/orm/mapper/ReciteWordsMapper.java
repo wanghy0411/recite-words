@@ -43,4 +43,12 @@ public interface ReciteWordsMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(ReciteWords record);
+
+    /*------------------------------------------------------------*/
+
+    /**
+     * 根据reciteId查
+     * @param reciteId 背诵id
+     */
+    List<ReciteWords> selectByReciteId(Long reciteId);
 }
