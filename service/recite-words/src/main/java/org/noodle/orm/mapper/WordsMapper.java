@@ -51,4 +51,10 @@ public interface WordsMapper {
      * @param dictionaryId 字典id
      */
     List<Words> selectByDictionaryId(Long dictionaryId);
+
+    /**
+     * 取用户可背诵的新单词
+     * @param userId 用户id
+     */
+    List<Words> selectNewWords(Long userId);
 }
