@@ -1,18 +1,26 @@
-package org.noodle.service.dictionary;
+package org.noodle.service.recite;
 
 import junit.framework.TestCase;
-import org.noodle.bean.dictionary.list.DictionaryListRequest;
+import org.noodle.bean.recite.add.ReciteAddRequest;
 import org.noodle.beans.NoodleApiParam;
 import org.noodle.beans.NoodleResponse;
 import org.noodle.util.json.JsonParser;
 import org.springframework.web.client.RestTemplate;
 
-public class DictionaryListServiceTest extends TestCase {
+public class ReciteAddServiceTest extends TestCase {
+
     public void testExecute() {
-        DictionaryListRequest request = new DictionaryListRequest();
+        ReciteAddRequest request = new ReciteAddRequest();
+        request.setId(128563786743505921L);
+        request.setWordsNumber(15);
+        request.setComment("test");
+        request.setSchedule1(1);
+        request.setSchedule2(7);
+        request.setSchedule3(30);
+        request.setSchedule4(90);
 
         NoodleApiParam noodleApiParam = new NoodleApiParam();
-        noodleApiParam.setApiMethodName("dictionary.list");
+        noodleApiParam.setApiMethodName("recite.add");
         noodleApiParam.setUserId(126813427162360833L);
         noodleApiParam.setRequestData(request);
 

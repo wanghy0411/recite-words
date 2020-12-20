@@ -67,4 +67,18 @@
     from words
     where dictionary_id = #{dictionaryId,jdbcType=BIGINT}
   </select>
+  <select id="selectNewWords" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      取用户可背诵的新单词
+    -->
+    select id, dictionary_id, spelling, pronunciation, explanation
+    from words
+    where not exists (select 1 from vocabulary where vocabulary.words_id = words.id and vocabulary.user_id = #{userId,jdbcType=BIGINT})
+    and exists ( select 1 from dictionary,user_dictionary
+                  where dictionary.id = words.dictionary_id
+                  and dictionary.valid_flag='Y'
+                  and user_dictionary.dictionary_id = dictionary.id
+                  and user_dictionary.user_id = #{userId,jdbcType=BIGINT}
+               )
+  </select>
 </mapper>

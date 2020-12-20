@@ -1,6 +1,8 @@
 package org.noodle.orm.mapper;
 
 import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
 import org.noodle.orm.model.Recite;
 
 public interface ReciteMapper {
@@ -43,4 +45,13 @@ public interface ReciteMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Recite record);
+
+    /*--------------------------------------------------*/
+
+    /**
+     * 根据用户查指定时间后的背诵记录
+     * @param userId 用户id
+     * @param beginTime 指定时间的时间戳
+     */
+    List<Recite> selectByUserId(@Param("userId") Long userId, @Param("beginTime") Long beginTime);
 }
