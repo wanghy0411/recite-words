@@ -1,4 +1,5 @@
 ﻿using ReciteWords.recite;
+using ReciteWords.review;
 using ReciteWords.vocabulary;
 using ReciteWords.words;
 using System;
@@ -41,6 +42,13 @@ namespace ReciteWords
         private void menuItemRecite_Click(object sender, EventArgs e)
         {
             FormRecite childForm = new FormRecite();
+            childForm.MdiParent = this;
+            childForm.Show();
+        }
+
+        private void menuItemReview_Click(object sender, EventArgs e)
+        {
+            FormReview childForm = new FormReview();
             childForm.MdiParent = this;
             childForm.Show();
         }

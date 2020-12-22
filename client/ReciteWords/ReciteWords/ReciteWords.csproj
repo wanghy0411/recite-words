@@ -78,6 +78,18 @@
     <Compile Include="recite\FormReciteSelect.Designer.cs">
       <DependentUpon>FormReciteSelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="review\FormReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="review\FormReview.Designer.cs">
+      <DependentUpon>FormReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="review\FormReviewSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="review\FormReviewSelect.Designer.cs">
+      <DependentUpon>FormReviewSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInfo.cs" />
     <Compile Include="dictionary\FormDictionary.cs">
       <SubType>Form</SubType>
@@ -124,6 +136,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="recite\FormReciteSelect.resx">
       <DependentUpon>FormReciteSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="review\FormReview.resx">
+      <DependentUpon>FormReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="review\FormReviewSelect.resx">
+      <DependentUpon>FormReviewSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="words\FormWords.resx">
       <DependentUpon>FormWords.cs</DependentUpon>

@@ -1,6 +1,8 @@
 package org.noodle.orm.mapper;
 
 import java.util.List;
+
+import org.noodle.orm.model.ReciteWords;
 import org.noodle.orm.model.ReviewWords;
 
 public interface ReviewWordsMapper {
@@ -43,4 +45,12 @@ public interface ReviewWordsMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(ReviewWords record);
+
+    /*------------------------------------------------------------*/
+
+    /**
+     * 根据reviewId查
+     * @param reviewId 复习id
+     */
+    List<ReviewWords> selectByReviewId(Long reviewId);
 }

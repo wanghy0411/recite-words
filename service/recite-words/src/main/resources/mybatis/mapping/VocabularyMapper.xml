@@ -78,4 +78,20 @@
     from vocabulary
     where words_id = #{wordsId,jdbcType=BIGINT}
   </select>
+  <select id="selectNeedReviewByUser" parameterType="map" resultMap="BaseResultMap">
+    <!--
+      根据用户查应复习词汇
+    -->
+    select id, user_id, words_id, review_time, review_schedule_time1, review_schedule_time2,
+    review_schedule_time3, review_schedule_time4
+    from vocabulary
+    where user_id = #{userId,jdbcType=BIGINT}
+    <![CDATA[
+      and ( review_time=0 and review_schedule_time1 < #{reviewTime,jdbcType=BIGINT} or
+            review_time=1 and review_schedule_time2 < #{reviewTime,jdbcType=BIGINT} or
+            review_time=2 and review_schedule_time3 < #{reviewTime,jdbcType=BIGINT} or
+            review_time=3 and review_schedule_time4 < #{reviewTime,jdbcType=BIGINT}
+            )
+      ]]>
+  </select>
 </mapper>
