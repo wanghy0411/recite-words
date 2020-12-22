@@ -1,4 +1,5 @@
-﻿using ReciteWords.vocabulary;
+﻿using ReciteWords.recite;
+using ReciteWords.vocabulary;
 using ReciteWords.words;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,13 @@ namespace ReciteWords
         private void menuItemExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void menuItemRecite_Click(object sender, EventArgs e)
+        {
+            FormRecite childForm = new FormRecite();
+            childForm.MdiParent = this;
+            childForm.Show();
         }
     }
 }

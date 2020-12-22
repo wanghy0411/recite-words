@@ -1,8 +1,7 @@
 package org.noodle.service.dictionary;
 
 import com.github.pagehelper.PageHelper;
-import org.noodle.bean.dictionary.list.DictionaryListRequest;
-import org.noodle.bean.dictionary.save.DictionarySaveRequest;
+import org.noodle.bean.dictionary.DictionaryListRequest;
 import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.DictionaryMapper;
 import org.noodle.orm.model.Dictionary;

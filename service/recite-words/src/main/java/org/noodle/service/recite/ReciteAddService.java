@@ -2,7 +2,7 @@ package org.noodle.service.recite;
 
 import cn.hutool.core.lang.Assert;
 import com.github.pagehelper.PageHelper;
-import org.noodle.bean.recite.add.ReciteAddRequest;
+import org.noodle.bean.recite.ReciteAddRequest;
 import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.ReciteMapper;
 import org.noodle.orm.mapper.ReciteWordsMapper;
@@ -60,6 +60,7 @@ public class ReciteAddService implements NoodlePostService<ReciteAddRequest, Obj
         int wordsNumber = request.getWordsNumber()==null?20: request.getWordsNumber();
         PageHelper.startPage(1, wordsNumber, false);
         List<Words> wordsList = wordsMapper.selectNewWords(request.getUserId());
+        Assert.notEmpty(wordsList, "已经没有单词可背了");
 
         //计算当天0点的时间戳以及后续4次复习的时间戳
         int schedule1 = request.getSchedule1()==null?1: request.getSchedule1();

@@ -1,6 +1,6 @@
 package org.noodle.service.recite;
 
-import org.noodle.bean.recite.list.ReciteListRequest;
+import org.noodle.bean.recite.ReciteListRequest;
 import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.ReciteMapper;
 import org.noodle.orm.model.Recite;

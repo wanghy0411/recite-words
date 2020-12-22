@@ -1,7 +1,7 @@
 package org.noodle.service.user.password;
 
 import junit.framework.TestCase;
-import org.noodle.bean.user.password.UserPasswordCheckRequest;
+import org.noodle.bean.user.UserPasswordCheckRequest;
 import org.noodle.beans.NoodleApiParam;
 import org.noodle.beans.NoodleResponse;
 import org.noodle.util.json.JsonParser;

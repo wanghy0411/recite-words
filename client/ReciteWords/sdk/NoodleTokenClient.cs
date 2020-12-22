@@ -58,6 +58,10 @@ namespace sdk
 
             response = JsonConvert.DeserializeObject<NoodleResponse<T>>(responseString, settings);
 
+            if (!response.Success)
+            {
+                throw new Exception(response.ErrorMessage);
+            }
             return response.Data;
         }
 

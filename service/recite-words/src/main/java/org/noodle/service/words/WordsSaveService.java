@@ -1,6 +1,6 @@
 package org.noodle.service.words;
 
-import org.noodle.bean.words.save.WordsSaveRequest;
+import org.noodle.bean.words.WordsSaveRequest;
 import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.WordsMapper;
 import org.noodle.service.NoodlePostService;

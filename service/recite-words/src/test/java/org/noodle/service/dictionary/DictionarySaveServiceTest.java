@@ -1,8 +1,7 @@
 package org.noodle.service.dictionary;
 
 import junit.framework.TestCase;
-import org.noodle.bean.dictionary.list.DictionaryListRequest;
-import org.noodle.bean.dictionary.save.DictionarySaveRequest;
+import org.noodle.bean.dictionary.DictionarySaveRequest;
 import org.noodle.beans.NoodleApiParam;
 import org.noodle.beans.NoodleResponse;
 import org.noodle.orm.model.Dictionary;

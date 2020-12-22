@@ -46,13 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dictionary\delete\DictionaryDeleteRequest.cs" />
+    <Compile Include="dictionary\DictionaryDeleteRequest.cs" />
     <Compile Include="dictionary\Dictionary.cs" />
-    <Compile Include="dictionary\list\DictionaryListRequest.cs" />
-    <Compile Include="dictionary\save\DictionarySaveRequest.cs" />
-    <Compile Include="dictionary\select\DictionarySearchPublicDto.cs" />
-    <Compile Include="dictionary\select\DictionarySearchPublicRequest.cs" />
-    <Compile Include="dictionary\select\DictionarySelectRequest.cs" />
+    <Compile Include="dictionary\DictionaryListRequest.cs" />
+    <Compile Include="dictionary\DictionarySaveRequest.cs" />
+    <Compile Include="dictionary\DictionarySearchPublicDto.cs" />
+    <Compile Include="dictionary\DictionarySearchPublicRequest.cs" />
+    <Compile Include="dictionary\DictionarySelectRequest.cs" />
     <Compile Include="id\NoodleIdGeneratorRequest.cs" />
     <Compile Include="NoodleApiParam.cs" />
     <Compile Include="NoodlePagedRequest.cs" />
@@ -60,12 +60,17 @@
     <Compile Include="NoodleResponse.cs" />
     <Compile Include="NoodleTokenClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="user\info\UserInfoQueryDto.cs" />
-    <Compile Include="user\info\UserInfoQueryRequest.cs" />
-    <Compile Include="user\password\UserPasswordCheckRequest.cs" />
-    <Compile Include="words\delete\WordsDeleteRequest.cs" />
-    <Compile Include="words\list\WordsListRequest.cs" />
-    <Compile Include="words\save\WordsSaveRequest.cs" />
+    <Compile Include="recite\ReciteAddRequest.cs" />
+    <Compile Include="recite\ReciteListRequest.cs" />
+    <Compile Include="recite\Recite.cs" />
+    <Compile Include="recite\ReciteWordsDto.cs" />
+    <Compile Include="recite\ReciteWordsRequest.cs" />
+    <Compile Include="user\UserInfoQueryDto.cs" />
+    <Compile Include="user\UserInfoQueryRequest.cs" />
+    <Compile Include="user\UserPasswordCheckRequest.cs" />
+    <Compile Include="words\WordsDeleteRequest.cs" />
+    <Compile Include="words\WordsListRequest.cs" />
+    <Compile Include="words\WordsSaveRequest.cs" />
     <Compile Include="words\Words.cs" />
   </ItemGroup>
   <ItemGroup>

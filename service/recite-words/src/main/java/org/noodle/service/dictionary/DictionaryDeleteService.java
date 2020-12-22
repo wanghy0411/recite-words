@@ -1,7 +1,7 @@
 package org.noodle.service.dictionary;
 
 import com.github.pagehelper.PageHelper;
-import org.noodle.bean.dictionary.delete.DictionaryDeleteRequest;
+import org.noodle.bean.dictionary.DictionaryDeleteRequest;
 import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.DictionaryMapper;
 import org.noodle.orm.mapper.UserDictionaryMapper;

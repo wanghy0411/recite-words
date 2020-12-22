@@ -1,6 +1,6 @@
 package org.noodle.service.dictionary;
 
-import org.noodle.bean.dictionary.select.DictionarySelectRequest;
+import org.noodle.bean.dictionary.DictionarySelectRequest;
 import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.UserDictionaryMapper;
 import org.noodle.orm.model.UserDictionary;

@@ -1,7 +1,7 @@
 package org.noodle.service.user.info;
 
 import junit.framework.TestCase;
-import org.noodle.bean.user.info.UserInfoQueryRequest;
+import org.noodle.bean.user.UserInfoQueryRequest;
 import org.noodle.beans.NoodleApiParam;
 import org.noodle.beans.NoodleResponse;
 import org.noodle.util.json.JsonParser;
