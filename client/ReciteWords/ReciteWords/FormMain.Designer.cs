@@ -164,6 +164,7 @@ namespace ReciteWords
             this.menuItemReview.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
             this.menuItemReview.Size = new System.Drawing.Size(180, 22);
             this.menuItemReview.Text = "复习";
+            this.menuItemReview.Click += new System.EventHandler(this.menuItemReview_Click);
             // 
             // toolStripSeparator6
             // 

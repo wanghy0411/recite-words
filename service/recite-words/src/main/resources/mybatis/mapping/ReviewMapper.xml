@@ -57,4 +57,13 @@
     select id, user_id, review_time, comment
     from review
   </select>
+  <select id="selectByUserId" parameterType="map" resultMap="BaseResultMap">
+    <!--
+      根据用户查指定时间后的背诵记录
+    -->
+    select id, user_id, review_time, comment
+    from review
+    where user_id = #{userId,jdbcType=BIGINT}
+    and review_time >= #{beginTime,jdbcType=BIGINT}
+  </select>
 </mapper>

@@ -65,6 +65,13 @@
     <Compile Include="recite\Recite.cs" />
     <Compile Include="recite\ReciteWordsDto.cs" />
     <Compile Include="recite\ReciteWordsRequest.cs" />
+    <Compile Include="review\Review.cs" />
+    <Compile Include="review\ReviewAddRequest.cs" />
+    <Compile Include="review\ReviewListRequest.cs" />
+    <Compile Include="review\ReviewVocabularyDto.cs" />
+    <Compile Include="review\ReviewVocabularyListRequest.cs" />
+    <Compile Include="review\ReviewWordsDto.cs" />
+    <Compile Include="review\ReviewWordsRequest.cs" />
     <Compile Include="user\UserInfoQueryDto.cs" />
     <Compile Include="user\UserInfoQueryRequest.cs" />
     <Compile Include="user\UserPasswordCheckRequest.cs" />

@@ -55,4 +55,12 @@
     select id, review_id, words_id
     from review_words
   </select>
+  <select id="selectByReviewId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      根据reviewId查
+    -->
+    select id, review_id, words_id
+    from review_words
+    where review_id = #{reviewId,jdbcType=BIGINT}
+  </select>
 </mapper>

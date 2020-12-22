@@ -1,6 +1,9 @@
 package org.noodle.orm.mapper;
 
 import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+import org.noodle.orm.model.Recite;
 import org.noodle.orm.model.Review;
 
 public interface ReviewMapper {
@@ -43,4 +46,13 @@ public interface ReviewMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Review record);
+
+    /*--------------------------------------------------*/
+
+    /**
+     * 根据用户查指定时间后的复习记录
+     * @param userId 用户id
+     * @param beginTime 指定时间的时间戳
+     */
+    List<Review> selectByUserId(@Param("userId") Long userId, @Param("beginTime") Long beginTime);
 }

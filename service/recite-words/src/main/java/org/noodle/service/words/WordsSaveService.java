@@ -5,6 +5,8 @@ import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.WordsMapper;
 import org.noodle.service.NoodlePostService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
@@ -24,6 +26,7 @@ public class WordsSaveService implements NoodlePostService<WordsSaveRequest, Obj
         return WordsSaveRequest.class;
     }
 
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = {Exception.class,NoodleException.class,RuntimeException.class})
     @Override
     public Object execute(WordsSaveRequest request) throws NoodleException {
         Assert.notNull(request.getWords(), "传入的单词对象不能为空");

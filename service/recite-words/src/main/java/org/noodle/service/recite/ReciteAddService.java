@@ -15,6 +15,8 @@ import org.noodle.orm.model.Words;
 import org.noodle.service.NoodlePostService;
 import org.noodle.util.id.SnowFlake;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -46,6 +48,7 @@ public class ReciteAddService implements NoodlePostService<ReciteAddRequest, Obj
         return ReciteAddRequest.class;
     }
 
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = {Exception.class,NoodleException.class,RuntimeException.class})
     @Override
     public Object execute(ReciteAddRequest request) throws NoodleException {
         Assert.notNull(request.getId(), "背诵id不能为空");

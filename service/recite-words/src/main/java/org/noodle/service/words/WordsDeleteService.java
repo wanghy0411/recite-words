@@ -8,6 +8,8 @@ import org.noodle.orm.mapper.WordsMapper;
 import org.noodle.orm.model.Vocabulary;
 import org.noodle.service.NoodlePostService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
 import javax.annotation.Resource;
@@ -30,6 +32,7 @@ public class WordsDeleteService implements NoodlePostService<WordsDeleteRequest,
         return WordsDeleteRequest.class;
     }
 
+    @Transactional(propagation = Propagation.REQUIRED, rollbackFor = {Exception.class,NoodleException.class,RuntimeException.class})
     @Override
     public Object execute(WordsDeleteRequest request) throws NoodleException {
         Assert.notNull(request.getWordsId(), "传入的单词id不能为空");
