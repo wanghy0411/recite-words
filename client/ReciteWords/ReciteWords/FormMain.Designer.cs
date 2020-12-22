@@ -84,7 +84,7 @@ namespace ReciteWords
             // 
             this.menuItemDictionary.ImageTransparentColor = System.Drawing.Color.Black;
             this.menuItemDictionary.Name = "menuItemDictionary";
-            this.menuItemDictionary.Size = new System.Drawing.Size(180, 22);
+            this.menuItemDictionary.Size = new System.Drawing.Size(159, 22);
             this.menuItemDictionary.Text = "字典";
             this.menuItemDictionary.Click += new System.EventHandler(this.menuItemDictionary_Click);
             // 
@@ -93,14 +93,14 @@ namespace ReciteWords
             this.menuItemWords.ImageTransparentColor = System.Drawing.Color.Black;
             this.menuItemWords.Name = "menuItemWords";
             this.menuItemWords.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.menuItemWords.Size = new System.Drawing.Size(180, 22);
+            this.menuItemWords.Size = new System.Drawing.Size(159, 22);
             this.menuItemWords.Text = "单词";
             this.menuItemWords.Click += new System.EventHandler(this.menuItemWords_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(156, 6);
             // 
             // menuItemPrint
             // 
@@ -108,7 +108,7 @@ namespace ReciteWords
             this.menuItemPrint.ImageTransparentColor = System.Drawing.Color.Black;
             this.menuItemPrint.Name = "menuItemPrint";
             this.menuItemPrint.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.menuItemPrint.Size = new System.Drawing.Size(180, 22);
+            this.menuItemPrint.Size = new System.Drawing.Size(159, 22);
             this.menuItemPrint.Text = "打印(&P)";
             // 
             // menuItemPreview
@@ -116,24 +116,24 @@ namespace ReciteWords
             this.menuItemPreview.Image = ((System.Drawing.Image)(resources.GetObject("menuItemPreview.Image")));
             this.menuItemPreview.ImageTransparentColor = System.Drawing.Color.Black;
             this.menuItemPreview.Name = "menuItemPreview";
-            this.menuItemPreview.Size = new System.Drawing.Size(180, 22);
+            this.menuItemPreview.Size = new System.Drawing.Size(159, 22);
             this.menuItemPreview.Text = "打印预览(&V)";
             // 
             // menuItemPrintSetup
             // 
             this.menuItemPrintSetup.Name = "menuItemPrintSetup";
-            this.menuItemPrintSetup.Size = new System.Drawing.Size(180, 22);
+            this.menuItemPrintSetup.Size = new System.Drawing.Size(159, 22);
             this.menuItemPrintSetup.Text = "打印设置";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(156, 6);
             // 
             // menuItemExit
             // 
             this.menuItemExit.Name = "menuItemExit";
-            this.menuItemExit.Size = new System.Drawing.Size(180, 22);
+            this.menuItemExit.Size = new System.Drawing.Size(159, 22);
             this.menuItemExit.Text = "退出(&X)";
             this.menuItemExit.Click += new System.EventHandler(this.menuItemExit_Click);
             // 
@@ -155,6 +155,7 @@ namespace ReciteWords
             this.menuItemRecite.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
             this.menuItemRecite.Size = new System.Drawing.Size(180, 22);
             this.menuItemRecite.Text = "背诵";
+            this.menuItemRecite.Click += new System.EventHandler(this.menuItemRecite_Click);
             // 
             // menuItemReview
             // 

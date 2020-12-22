@@ -2,7 +2,7 @@ package org.noodle.service.words;
 
 import cn.hutool.core.lang.Assert;
 import com.github.pagehelper.PageHelper;
-import org.noodle.bean.words.list.WordsListRequest;
+import org.noodle.bean.words.WordsListRequest;
 import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.WordsMapper;
 import org.noodle.orm.model.Words;

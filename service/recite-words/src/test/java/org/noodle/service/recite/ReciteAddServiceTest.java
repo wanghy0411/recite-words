@@ -1,7 +1,7 @@
 package org.noodle.service.recite;
 
 import junit.framework.TestCase;
-import org.noodle.bean.recite.add.ReciteAddRequest;
+import org.noodle.bean.recite.ReciteAddRequest;
 import org.noodle.beans.NoodleApiParam;
 import org.noodle.beans.NoodleResponse;
 import org.noodle.util.json.JsonParser;

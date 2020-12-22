@@ -1,7 +1,7 @@
 package org.noodle.service.recite;
 
-import org.noodle.bean.recite.words.ReciteWordsDto;
-import org.noodle.bean.recite.words.ReciteWordsRequest;
+import org.noodle.bean.recite.ReciteWordsDto;
+import org.noodle.bean.recite.ReciteWordsRequest;
 import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.ReciteWordsMapper;
 import org.noodle.orm.mapper.WordsMapper;

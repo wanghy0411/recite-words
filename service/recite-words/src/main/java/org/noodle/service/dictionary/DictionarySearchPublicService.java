@@ -1,8 +1,8 @@
 package org.noodle.service.dictionary;
 
 import com.github.pagehelper.PageHelper;
-import org.noodle.bean.dictionary.select.DictionarySearchPublicDto;
-import org.noodle.bean.dictionary.select.DictionarySearchPublicRequest;
+import org.noodle.bean.dictionary.DictionarySearchPublicDto;
+import org.noodle.bean.dictionary.DictionarySearchPublicRequest;
 import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.DictionaryMapper;
 import org.noodle.orm.mapper.UserDictionaryMapper;

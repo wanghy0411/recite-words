@@ -1,7 +1,7 @@
 package org.noodle.service.words;
 
 import com.github.pagehelper.PageHelper;
-import org.noodle.bean.words.delete.WordsDeleteRequest;
+import org.noodle.bean.words.WordsDeleteRequest;
 import org.noodle.beans.NoodleException;
 import org.noodle.orm.mapper.VocabularyMapper;
 import org.noodle.orm.mapper.WordsMapper;
