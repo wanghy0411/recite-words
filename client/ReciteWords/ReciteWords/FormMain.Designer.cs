@@ -178,6 +178,7 @@ namespace ReciteWords
             this.menuItemExcise.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.menuItemExcise.Size = new System.Drawing.Size(180, 22);
             this.menuItemExcise.Text = "测验";
+            this.menuItemExcise.Click += new System.EventHandler(this.menuItemExcise_Click);
             // 
             // statusStrip
             // 

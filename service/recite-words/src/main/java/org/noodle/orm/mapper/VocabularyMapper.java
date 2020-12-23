@@ -60,4 +60,10 @@ public interface VocabularyMapper {
      * @param reviewTime 复习时间
      */
     List<Vocabulary> selectNeedReviewByUser(@Param("userId") Long userId, @Param("reviewTime") Long reviewTime);
+
+    /**
+     * 根据用户查应测验词汇
+     * @param userId 用户id
+     */
+    List<Vocabulary> selectNeedExerciseByUser(Long userId);
 }

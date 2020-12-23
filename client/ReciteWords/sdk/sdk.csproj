@@ -53,6 +53,15 @@
     <Compile Include="dictionary\DictionarySearchPublicDto.cs" />
     <Compile Include="dictionary\DictionarySearchPublicRequest.cs" />
     <Compile Include="dictionary\DictionarySelectRequest.cs" />
+    <Compile Include="exercise\Exercise.cs" />
+    <Compile Include="exercise\ExerciseAddRequest.cs" />
+    <Compile Include="exercise\ExerciseListRequest.cs" />
+    <Compile Include="exercise\ExerciseScoreRequest.cs" />
+    <Compile Include="exercise\ExerciseVocabularyDto.cs" />
+    <Compile Include="exercise\ExerciseVocabularyListRequest.cs" />
+    <Compile Include="exercise\ExerciseWords.cs" />
+    <Compile Include="exercise\ExerciseWordsDto.cs" />
+    <Compile Include="exercise\ExerciseWordsRequest.cs" />
     <Compile Include="id\NoodleIdGeneratorRequest.cs" />
     <Compile Include="NoodleApiParam.cs" />
     <Compile Include="NoodlePagedRequest.cs" />

@@ -1,6 +1,8 @@
 package org.noodle.orm.mapper;
 
 import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
 import org.noodle.orm.model.Exercise;
 
 public interface ExerciseMapper {
@@ -43,4 +45,13 @@ public interface ExerciseMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Exercise record);
+
+    /*--------------------------------------------------*/
+
+    /**
+     * 根据用户查指定时间后的测验记录
+     * @param userId 用户id
+     * @param beginTime 指定时间的时间戳
+     */
+    List<Exercise> selectByUserId(@Param("userId") Long userId, @Param("beginTime") Long beginTime);
 }

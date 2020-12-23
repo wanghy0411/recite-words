@@ -59,4 +59,13 @@
     select id, user_id, exercise_time, score, comment
     from exercise
   </select>
+  <select id="selectByUserId" parameterType="map" resultMap="BaseResultMap">
+    <!--
+      根据用户查指定时间后的测验记录
+    -->
+    select id, user_id, exercise_time, score, comment
+    from exercise
+    where user_id = #{userId,jdbcType=BIGINT}
+    and exercise_time >= #{beginTime,jdbcType=BIGINT}
+  </select>
 </mapper>
