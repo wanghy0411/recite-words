@@ -102,12 +102,12 @@ namespace ReciteWords.recite
                         return;
                     }
                 }
-
-                FormReciteSelect form = new FormReciteSelect();
-                form.ShowDialog(this);
-
-                refreshData();
             }
+
+            FormReciteSelect form = new FormReciteSelect();
+            form.ShowDialog(this);
+
+            refreshData();
         }
     }
 }

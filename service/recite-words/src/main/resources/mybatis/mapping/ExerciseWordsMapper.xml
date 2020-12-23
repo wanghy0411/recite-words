@@ -59,4 +59,12 @@
     select id, exercise_id, vocabulary_id, line_number, correct
     from exercise_words
   </select>
+  <select id="selectByExerciseId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      根据exerciseId查
+    -->
+    select id, exercise_id, vocabulary_id, line_number, correct
+    from exercise_words
+    where exercise_id = #{exerciseId,jdbcType=BIGINT}
+  </select>
 </mapper>

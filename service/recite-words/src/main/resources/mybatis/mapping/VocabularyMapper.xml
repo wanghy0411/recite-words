@@ -94,4 +94,21 @@
             )
       ]]>
   </select>
+  <select id="selectNeedExerciseByUser" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      根据用户查应测验词汇
+    -->
+    select id, user_id, words_id, review_time, review_schedule_time1, review_schedule_time2,
+    review_schedule_time3, review_schedule_time4
+    from vocabulary
+    where user_id = #{userId,jdbcType=BIGINT}
+      and review_time >= 4
+    and exists ( select 1 from dictionary,user_dictionary,words
+                  where words.id = vocabulary.words_id
+                  and dictionary.id = words.dictionary_id
+                  and dictionary.valid_flag='Y'
+                  and user_dictionary.dictionary_id = dictionary.id
+                  and user_dictionary.user_id = #{userId,jdbcType=BIGINT}
+               )
+  </select>
 </mapper>

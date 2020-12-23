@@ -39,6 +39,7 @@
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,6 +53,24 @@
   <ItemGroup>
     <Compile Include="Config.cs" />
     <Compile Include="DataTableHelper.cs" />
+    <Compile Include="exercise\FormExercise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exercise\FormExercise.Designer.cs">
+      <DependentUpon>FormExercise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="exercise\FormExerciseScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exercise\FormExerciseScore.Designer.cs">
+      <DependentUpon>FormExerciseScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="exercise\FormExerciseSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="exercise\FormExerciseSelect.Designer.cs">
+      <DependentUpon>FormExerciseSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +128,15 @@
     <Compile Include="words\FormWords.Designer.cs">
       <DependentUpon>FormWords.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="exercise\FormExercise.resx">
+      <DependentUpon>FormExercise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exercise\FormExerciseScore.resx">
+      <DependentUpon>FormExerciseScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="exercise\FormExerciseSelect.resx">
+      <DependentUpon>FormExerciseSelect.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>

@@ -43,4 +43,12 @@ public interface ExerciseWordsMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(ExerciseWords record);
+
+    /*------------------------------------------------------------*/
+
+    /**
+     * 根据exerciseId查
+     * @param exerciseId 测验id
+     */
+    List<ExerciseWords> selectByExerciseId(Long exerciseId);
 }

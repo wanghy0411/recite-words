@@ -59,7 +59,7 @@
   </select>
   <select id="selectByUserId" parameterType="map" resultMap="BaseResultMap">
     <!--
-      根据用户查指定时间后的背诵记录
+      根据用户查指定时间后的复习记录
     -->
     select id, user_id, review_time, comment
     from review
