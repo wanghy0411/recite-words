@@ -29,20 +29,20 @@ namespace ReciteWords.review
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.buttonReview = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewReview = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dataGridViewReviewWords = new System.Windows.Forms.DataGridView();
             this.ReviewId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReviewDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReviewTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReviewComment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridViewReviewWords = new System.Windows.Forms.DataGridView();
             this.ReviewWordsId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReviewId_ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WordsId = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,94 +80,38 @@ namespace ReciteWords.review
             this.dataGridViewReview.AllowUserToAddRows = false;
             this.dataGridViewReview.AllowUserToDeleteRows = false;
             this.dataGridViewReview.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewReview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewReview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewReview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewReview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ReviewId,
             this.ReviewDateTime,
             this.ReviewTime,
             this.ReviewComment});
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewReview.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewReview.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewReview.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewReview.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewReview.Name = "dataGridViewReview";
             this.dataGridViewReview.ReadOnly = true;
+            this.dataGridViewReview.RowHeadersWidth = 50;
             this.dataGridViewReview.RowTemplate.Height = 23;
             this.dataGridViewReview.Size = new System.Drawing.Size(269, 399);
             this.dataGridViewReview.TabIndex = 0;
             this.dataGridViewReview.CurrentCellChanged += new System.EventHandler(this.dataGridViewReview_CurrentCellChanged);
             this.dataGridViewReview.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dataGridViewReview_RowStateChanged);
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.dataGridViewReview);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 49);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 401);
-            this.panel2.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dataGridViewReviewWords);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(271, 49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(529, 401);
-            this.panel3.TabIndex = 4;
-            // 
-            // dataGridViewReviewWords
-            // 
-            this.dataGridViewReviewWords.AllowUserToAddRows = false;
-            this.dataGridViewReviewWords.AllowUserToDeleteRows = false;
-            this.dataGridViewReviewWords.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewReviewWords.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewReviewWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewReviewWords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ReviewWordsId,
-            this.ReviewId_,
-            this.WordsId,
-            this.Spelling,
-            this.Pronunciation,
-            this.Explanation});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewReviewWords.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridViewReviewWords.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewReviewWords.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewReviewWords.Name = "dataGridViewReviewWords";
-            this.dataGridViewReviewWords.ReadOnly = true;
-            this.dataGridViewReviewWords.RowTemplate.Height = 23;
-            this.dataGridViewReviewWords.Size = new System.Drawing.Size(529, 401);
-            this.dataGridViewReviewWords.TabIndex = 1;
-            this.dataGridViewReviewWords.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dataGridViewReviewWords_RowStateChanged);
             // 
             // ReviewId
             // 
@@ -200,6 +144,64 @@ namespace ReciteWords.review
             this.ReviewComment.HeaderText = "备注";
             this.ReviewComment.Name = "ReviewComment";
             this.ReviewComment.ReadOnly = true;
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.dataGridViewReview);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 49);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(271, 401);
+            this.panel2.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dataGridViewReviewWords);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(271, 49);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(529, 401);
+            this.panel3.TabIndex = 4;
+            // 
+            // dataGridViewReviewWords
+            // 
+            this.dataGridViewReviewWords.AllowUserToAddRows = false;
+            this.dataGridViewReviewWords.AllowUserToDeleteRows = false;
+            this.dataGridViewReviewWords.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewReviewWords.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewReviewWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewReviewWords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ReviewWordsId,
+            this.ReviewId_,
+            this.WordsId,
+            this.Spelling,
+            this.Pronunciation,
+            this.Explanation});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewReviewWords.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewReviewWords.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewReviewWords.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewReviewWords.Name = "dataGridViewReviewWords";
+            this.dataGridViewReviewWords.ReadOnly = true;
+            this.dataGridViewReviewWords.RowHeadersWidth = 50;
+            this.dataGridViewReviewWords.RowTemplate.Height = 23;
+            this.dataGridViewReviewWords.Size = new System.Drawing.Size(529, 401);
+            this.dataGridViewReviewWords.TabIndex = 1;
+            this.dataGridViewReviewWords.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dataGridViewReviewWords_RowStateChanged);
             // 
             // ReviewWordsId
             // 

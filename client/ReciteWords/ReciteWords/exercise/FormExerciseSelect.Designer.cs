@@ -155,6 +155,7 @@ namespace ReciteWords.exercise
             this.dataGridViewVocabulary.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewVocabulary.Name = "dataGridViewVocabulary";
             this.dataGridViewVocabulary.ReadOnly = true;
+            this.dataGridViewVocabulary.RowHeadersWidth = 50;
             this.dataGridViewVocabulary.RowTemplate.Height = 23;
             this.dataGridViewVocabulary.Size = new System.Drawing.Size(800, 358);
             this.dataGridViewVocabulary.TabIndex = 1;

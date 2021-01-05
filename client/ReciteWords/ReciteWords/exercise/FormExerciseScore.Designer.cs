@@ -92,6 +92,7 @@ namespace ReciteWords.exercise
             this.dataGridViewWords.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewWords.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewWords.Name = "dataGridViewWords";
+            this.dataGridViewWords.RowHeadersWidth = 50;
             this.dataGridViewWords.RowTemplate.Height = 23;
             this.dataGridViewWords.Size = new System.Drawing.Size(800, 384);
             this.dataGridViewWords.TabIndex = 0;

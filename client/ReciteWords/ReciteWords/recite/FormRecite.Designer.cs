@@ -34,10 +34,14 @@ namespace ReciteWords.recite
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.buttonRecite = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridViewRecite = new System.Windows.Forms.DataGridView();
+            this.ReciteId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReciteDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReciteTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ReciteComment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridViewReciteWords = new System.Windows.Forms.DataGridView();
             this.ReciteWordsId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReciteId_ = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,14 +49,10 @@ namespace ReciteWords.recite
             this.Spelling = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pronunciation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Explanation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReciteId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReciteDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReciteTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ReciteComment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRecite)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReciteWords)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,26 +65,6 @@ namespace ReciteWords.recite
             this.panel1.Size = new System.Drawing.Size(800, 49);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.dataGridViewRecite);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 49);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(271, 401);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.dataGridViewReciteWords);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(271, 49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(529, 401);
-            this.panel3.TabIndex = 2;
-            // 
             // buttonRecite
             // 
             this.buttonRecite.Location = new System.Drawing.Point(12, 12);
@@ -94,6 +74,16 @@ namespace ReciteWords.recite
             this.buttonRecite.Text = "今日背诵";
             this.buttonRecite.UseVisualStyleBackColor = true;
             this.buttonRecite.Click += new System.EventHandler(this.buttonRecite_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.dataGridViewRecite);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 49);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(271, 401);
+            this.panel2.TabIndex = 1;
             // 
             // dataGridViewRecite
             // 
@@ -126,11 +116,54 @@ namespace ReciteWords.recite
             this.dataGridViewRecite.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewRecite.Name = "dataGridViewRecite";
             this.dataGridViewRecite.ReadOnly = true;
+            this.dataGridViewRecite.RowHeadersWidth = 50;
             this.dataGridViewRecite.RowTemplate.Height = 23;
             this.dataGridViewRecite.Size = new System.Drawing.Size(269, 399);
             this.dataGridViewRecite.TabIndex = 0;
             this.dataGridViewRecite.CurrentCellChanged += new System.EventHandler(this.dataGridViewRecite_CurrentCellChanged);
             this.dataGridViewRecite.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dataGridViewRecite_RowStateChanged);
+            // 
+            // ReciteId
+            // 
+            this.ReciteId.DataPropertyName = "Id";
+            this.ReciteId.HeaderText = "";
+            this.ReciteId.Name = "ReciteId";
+            this.ReciteId.ReadOnly = true;
+            this.ReciteId.Visible = false;
+            // 
+            // ReciteDateTime
+            // 
+            this.ReciteDateTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ReciteDateTime.DataPropertyName = "ReciteDateTime";
+            this.ReciteDateTime.HeaderText = "背诵日期";
+            this.ReciteDateTime.Name = "ReciteDateTime";
+            this.ReciteDateTime.ReadOnly = true;
+            this.ReciteDateTime.Width = 81;
+            // 
+            // ReciteTime
+            // 
+            this.ReciteTime.DataPropertyName = "ReciteTime";
+            this.ReciteTime.HeaderText = "背诵时间";
+            this.ReciteTime.Name = "ReciteTime";
+            this.ReciteTime.ReadOnly = true;
+            this.ReciteTime.Visible = false;
+            // 
+            // ReciteComment
+            // 
+            this.ReciteComment.DataPropertyName = "Comment";
+            this.ReciteComment.HeaderText = "备注";
+            this.ReciteComment.Name = "ReciteComment";
+            this.ReciteComment.ReadOnly = true;
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.dataGridViewReciteWords);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(271, 49);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(529, 401);
+            this.panel3.TabIndex = 2;
             // 
             // dataGridViewReciteWords
             // 
@@ -165,6 +198,7 @@ namespace ReciteWords.recite
             this.dataGridViewReciteWords.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewReciteWords.Name = "dataGridViewReciteWords";
             this.dataGridViewReciteWords.ReadOnly = true;
+            this.dataGridViewReciteWords.RowHeadersWidth = 50;
             this.dataGridViewReciteWords.RowTemplate.Height = 23;
             this.dataGridViewReciteWords.Size = new System.Drawing.Size(527, 399);
             this.dataGridViewReciteWords.TabIndex = 0;
@@ -215,38 +249,6 @@ namespace ReciteWords.recite
             this.Explanation.Name = "Explanation";
             this.Explanation.ReadOnly = true;
             // 
-            // ReciteId
-            // 
-            this.ReciteId.DataPropertyName = "Id";
-            this.ReciteId.HeaderText = "";
-            this.ReciteId.Name = "ReciteId";
-            this.ReciteId.ReadOnly = true;
-            this.ReciteId.Visible = false;
-            // 
-            // ReciteDateTime
-            // 
-            this.ReciteDateTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ReciteDateTime.DataPropertyName = "ReciteDateTime";
-            this.ReciteDateTime.HeaderText = "背诵日期";
-            this.ReciteDateTime.Name = "ReciteDateTime";
-            this.ReciteDateTime.ReadOnly = true;
-            this.ReciteDateTime.Width = 81;
-            // 
-            // ReciteTime
-            // 
-            this.ReciteTime.DataPropertyName = "ReciteTime";
-            this.ReciteTime.HeaderText = "背诵时间";
-            this.ReciteTime.Name = "ReciteTime";
-            this.ReciteTime.ReadOnly = true;
-            this.ReciteTime.Visible = false;
-            // 
-            // ReciteComment
-            // 
-            this.ReciteComment.DataPropertyName = "Comment";
-            this.ReciteComment.HeaderText = "备注";
-            this.ReciteComment.Name = "ReciteComment";
-            this.ReciteComment.ReadOnly = true;
-            // 
             // FormRecite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -260,8 +262,8 @@ namespace ReciteWords.recite
             this.Load += new System.EventHandler(this.FormRecite_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRecite)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReciteWords)).EndInit();
             this.ResumeLayout(false);
 
