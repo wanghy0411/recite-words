@@ -29,23 +29,23 @@ namespace ReciteWords.exercise
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.buttonExercise = new System.Windows.Forms.Button();
             this.buttonScore = new System.Windows.Forms.Button();
+            this.buttonExercise = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridViewExercise = new System.Windows.Forms.DataGridView();
-            this.dataGridViewWords = new System.Windows.Forms.DataGridView();
             this.ExerciseId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExerciseTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExerciseDateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Score = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Comment = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dataGridViewWords = new System.Windows.Forms.DataGridView();
             this.ExerciseDetailId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExerciseId_ = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LineNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,8 +56,8 @@ namespace ReciteWords.exercise
             this.Correct = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExercise)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewWords)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,23 +71,15 @@ namespace ReciteWords.exercise
             this.panel1.Size = new System.Drawing.Size(800, 61);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // buttonScore
             // 
-            this.panel2.Controls.Add(this.dataGridViewExercise);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 61);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 389);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dataGridViewWords);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(286, 61);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(514, 389);
-            this.panel3.TabIndex = 2;
+            this.buttonScore.Location = new System.Drawing.Point(106, 22);
+            this.buttonScore.Name = "buttonScore";
+            this.buttonScore.Size = new System.Drawing.Size(92, 23);
+            this.buttonScore.TabIndex = 1;
+            this.buttonScore.Text = "测验结果输入";
+            this.buttonScore.UseVisualStyleBackColor = true;
+            this.buttonScore.Click += new System.EventHandler(this.buttonScore_Click);
             // 
             // buttonExercise
             // 
@@ -99,15 +91,14 @@ namespace ReciteWords.exercise
             this.buttonExercise.UseVisualStyleBackColor = true;
             this.buttonExercise.Click += new System.EventHandler(this.buttonExercise_Click);
             // 
-            // buttonScore
+            // panel2
             // 
-            this.buttonScore.Location = new System.Drawing.Point(106, 22);
-            this.buttonScore.Name = "buttonScore";
-            this.buttonScore.Size = new System.Drawing.Size(92, 23);
-            this.buttonScore.TabIndex = 1;
-            this.buttonScore.Text = "测验结果输入";
-            this.buttonScore.UseVisualStyleBackColor = true;
-            this.buttonScore.Click += new System.EventHandler(this.buttonScore_Click);
+            this.panel2.Controls.Add(this.dataGridViewExercise);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 61);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(286, 389);
+            this.panel2.TabIndex = 1;
             // 
             // dataGridViewExercise
             // 
@@ -115,14 +106,14 @@ namespace ReciteWords.exercise
             this.dataGridViewExercise.AllowUserToDeleteRows = false;
             this.dataGridViewExercise.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewExercise.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewExercise.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewExercise.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewExercise.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewExercise.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ExerciseId,
@@ -131,64 +122,24 @@ namespace ReciteWords.exercise
             this.ExerciseDateTime,
             this.Score,
             this.Comment});
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewExercise.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewExercise.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewExercise.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewExercise.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewExercise.Name = "dataGridViewExercise";
             this.dataGridViewExercise.ReadOnly = true;
+            this.dataGridViewExercise.RowHeadersWidth = 50;
             this.dataGridViewExercise.RowTemplate.Height = 23;
             this.dataGridViewExercise.Size = new System.Drawing.Size(286, 389);
             this.dataGridViewExercise.TabIndex = 0;
             this.dataGridViewExercise.CurrentCellChanged += new System.EventHandler(this.dataGridViewExercise_CurrentCellChanged);
             this.dataGridViewExercise.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dataGridViewExercise_RowStateChanged);
-            // 
-            // dataGridViewWords
-            // 
-            this.dataGridViewWords.AllowUserToAddRows = false;
-            this.dataGridViewWords.AllowUserToDeleteRows = false;
-            this.dataGridViewWords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridViewWords.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewWords.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridViewWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewWords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ExerciseDetailId,
-            this.ExerciseId_,
-            this.LineNumber,
-            this.WordsId,
-            this.Spelling,
-            this.Pronunciation,
-            this.Explanation,
-            this.Correct});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewWords.DefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridViewWords.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewWords.Location = new System.Drawing.Point(0, 0);
-            this.dataGridViewWords.Name = "dataGridViewWords";
-            this.dataGridViewWords.ReadOnly = true;
-            this.dataGridViewWords.RowTemplate.Height = 23;
-            this.dataGridViewWords.Size = new System.Drawing.Size(514, 389);
-            this.dataGridViewWords.TabIndex = 0;
-            this.dataGridViewWords.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dataGridViewWords_RowStateChanged);
             // 
             // ExerciseId
             // 
@@ -237,6 +188,57 @@ namespace ReciteWords.exercise
             this.Comment.Name = "Comment";
             this.Comment.ReadOnly = true;
             this.Comment.Width = 57;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dataGridViewWords);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(286, 61);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(514, 389);
+            this.panel3.TabIndex = 2;
+            // 
+            // dataGridViewWords
+            // 
+            this.dataGridViewWords.AllowUserToAddRows = false;
+            this.dataGridViewWords.AllowUserToDeleteRows = false;
+            this.dataGridViewWords.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewWords.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewWords.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewWords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewWords.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ExerciseDetailId,
+            this.ExerciseId_,
+            this.LineNumber,
+            this.WordsId,
+            this.Spelling,
+            this.Pronunciation,
+            this.Explanation,
+            this.Correct});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewWords.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewWords.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewWords.Location = new System.Drawing.Point(0, 0);
+            this.dataGridViewWords.Name = "dataGridViewWords";
+            this.dataGridViewWords.ReadOnly = true;
+            this.dataGridViewWords.RowHeadersWidth = 50;
+            this.dataGridViewWords.RowTemplate.Height = 23;
+            this.dataGridViewWords.Size = new System.Drawing.Size(514, 389);
+            this.dataGridViewWords.TabIndex = 0;
+            this.dataGridViewWords.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dataGridViewWords_RowStateChanged);
             // 
             // ExerciseDetailId
             // 
@@ -319,8 +321,8 @@ namespace ReciteWords.exercise
             this.Load += new System.EventHandler(this.FormExercise_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewExercise)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewWords)).EndInit();
             this.ResumeLayout(false);
 

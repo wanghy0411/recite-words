@@ -37,8 +37,10 @@ public class ReviewVocabularyListService implements NoodlePostService<ReviewVoca
         int pageSize = request.getPageSize()==null?500: request.getPageSize();
         int pageNum = request.getPageNum()==null?1:request.getPageNum();
 
+        long currentTimeMillis = System.currentTimeMillis();
+
         PageHelper.startPage(pageNum, pageSize, false);
-        List<Vocabulary> vocabularyList = vocabularyMapper.selectNeedReviewByUser(request.getUserId(), System.currentTimeMillis());
+        List<Vocabulary> vocabularyList = vocabularyMapper.selectNeedReviewByUser(request.getUserId(), currentTimeMillis);
 
         return vocabularyList.parallelStream()
                 .map(this::convertToDto)

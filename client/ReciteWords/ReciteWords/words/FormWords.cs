@@ -96,6 +96,7 @@ namespace ReciteWords.words
             request.PageSize = pageSize;
 
             List<Words> wordsList = _noodleTokenClient.DoPost(request);
+            wordsList.Sort((x, y) => x.Id.CompareTo(y.Id));
             _dtWords = DataTableHelper.ToDataTable<Words>(wordsList);
 
             dataGridViewWords.DataSource = _dtWords;

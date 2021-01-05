@@ -1,5 +1,5 @@
 group 'org.noodle'
-version '1.0.0.test'
+version '1.0.0.release'
 
 buildscript {
     repositories {

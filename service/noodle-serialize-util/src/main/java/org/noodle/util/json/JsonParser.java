@@ -12,7 +12,7 @@ import java.io.IOException;
  *
  */
 public class JsonParser {
-    private static JsonParser jsonParser = new JsonParser();
+    private static final JsonParser jsonParser = new JsonParser();
     private final ObjectMapper mapper = new ObjectMapper();
 
     public static JsonParser getSingleInstance()

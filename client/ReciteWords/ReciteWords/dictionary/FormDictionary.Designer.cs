@@ -69,6 +69,7 @@ namespace ReciteWords.vocabulary
             this.dataGridViewDictionary.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewDictionary.Name = "dataGridViewDictionary";
             this.dataGridViewDictionary.ReadOnly = true;
+            this.dataGridViewDictionary.RowHeadersWidth = 50;
             this.dataGridViewDictionary.RowTemplate.Height = 23;
             this.dataGridViewDictionary.Size = new System.Drawing.Size(480, 343);
             this.dataGridViewDictionary.TabIndex = 0;
