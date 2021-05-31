@@ -1,6 +1,7 @@
 package org.noodle.service.recite;
 
 import cn.hutool.core.lang.Assert;
+import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import org.noodle.bean.recite.ReciteAddRequest;
 import org.noodle.beans.NoodleException;
@@ -21,6 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * 背诵记录增加服务
@@ -59,12 +61,44 @@ public class ReciteAddService implements NoodlePostService<ReciteAddRequest, Obj
             return null;
         }
 
-        //取本次背诵的单词列表
-        int wordsNumber = request.getWordsNumber()==null?20: request.getWordsNumber();
-        PageHelper.startPage(1, wordsNumber, false);
-        List<Words> wordsList = wordsMapper.selectNewWords(request.getUserId());
-        Assert.notEmpty(wordsList, "已经没有单词可背了");
+        //取可背诵的单词数
+        Page<Words> page = PageHelper.startPage(1, 1, true);
+        wordsMapper.selectNewWords(request.getUserId());
+        long totalWords = page.getTotal();
+        Assert.isTrue(totalWords > 0, "已经没有单词可背了");
 
+        //取本次背诵的单词列表
+        List<Words> wordsList;
+        int wordsNumber = request.getWordsNumber()==null?20: request.getWordsNumber();
+
+        if (totalWords <= wordsNumber) {
+            PageHelper.startPage(1, wordsNumber, false);
+            wordsList = wordsMapper.selectNewWords(request.getUserId());
+        }
+        else {
+            List<Integer> numList = new ArrayList<>();
+            for (int i = 0; i < wordsNumber; i++) {
+                int pageNum = -1;
+
+                while (pageNum < 0) {
+                    Random random = new Random();
+                    pageNum = random.nextInt((int) totalWords);
+
+                    if (numList.contains(pageNum)) {
+                        pageNum = -1;
+                    }
+                }
+
+                numList.add(pageNum);
+            }
+
+            wordsList = new ArrayList<>();
+            for (Integer pageNum : numList) {
+                PageHelper.startPage(pageNum, 1, true);
+                List<Words> tmpWordsList = wordsMapper.selectNewWords(request.getUserId());
+                wordsList.addAll(tmpWordsList);
+            }
+        }
         //计算当天0点的时间戳以及后续4次复习的时间戳
         int schedule1 = request.getSchedule1()==null?1: request.getSchedule1();
         int schedule2 = request.getSchedule2()==null?7: request.getSchedule2();
