@@ -86,6 +86,13 @@
     review_schedule_time3, review_schedule_time4
     from vocabulary
     where user_id = #{userId,jdbcType=BIGINT}
+      and exists ( select 1 from dictionary,user_dictionary,words
+                    where words.id = vocabulary.words_id
+                      and dictionary.id = words.dictionary_id
+                      and dictionary.valid_flag='Y'
+                      and user_dictionary.dictionary_id = dictionary.id
+                      and user_dictionary.user_id = #{userId,jdbcType=BIGINT}
+                 )
     <![CDATA[
       and ( review_time=0 and review_schedule_time1 < #{reviewTime,jdbcType=BIGINT} or
             review_time=1 and review_schedule_time2 < #{reviewTime,jdbcType=BIGINT} or
@@ -103,12 +110,12 @@
     from vocabulary
     where user_id = #{userId,jdbcType=BIGINT}
       and review_time >= 4
-    and exists ( select 1 from dictionary,user_dictionary,words
-                  where words.id = vocabulary.words_id
-                  and dictionary.id = words.dictionary_id
-                  and dictionary.valid_flag='Y'
-                  and user_dictionary.dictionary_id = dictionary.id
-                  and user_dictionary.user_id = #{userId,jdbcType=BIGINT}
-               )
+      and exists ( select 1 from dictionary,user_dictionary,words
+                    where words.id = vocabulary.words_id
+                      and dictionary.id = words.dictionary_id
+                      and dictionary.valid_flag='Y'
+                      and user_dictionary.dictionary_id = dictionary.id
+                      and user_dictionary.user_id = #{userId,jdbcType=BIGINT}
+                 )
   </select>
 </mapper>
