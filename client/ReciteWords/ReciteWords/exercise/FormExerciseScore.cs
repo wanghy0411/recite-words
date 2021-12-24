@@ -33,7 +33,7 @@ namespace ReciteWords.exercise
             List<ExerciseWordsDto> exerciseWordsList = _noodleTokenClient.DoPost(request);
             foreach (ExerciseWordsDto exerciseWordsDto in exerciseWordsList)
             {
-                exerciseWordsDto.Correct = 0;
+                exerciseWordsDto.Correct = 1;
             }
             _dtExerciseWords = DataTableHelper.ToDataTable<ExerciseWordsDto>(exerciseWordsList);
 
