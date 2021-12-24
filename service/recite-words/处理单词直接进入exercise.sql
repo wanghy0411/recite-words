@@ -1,5 +1,5 @@
 insert into vocabulary
-select id, 127373929833643012, id, 4, 1639723986261, 1647413586261, 1642229586261, 1647413586261 from words
+select id, 127373929833643012, id, 4, 1639723986261, 1640242386261, 1642229586261, 1647413586261 from words
 where dictionary_id in (select dictionary_id from user_dictionary where user_id = 127373929833643012)
   and id not in (select words_id from vocabulary where user_id = 127373929833643012)
 ;

@@ -33,6 +33,8 @@ namespace ReciteWords.exercise
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridViewWords = new System.Windows.Forms.DataGridView();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonConfirm = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ExerciseId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LineNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,9 +42,7 @@ namespace ReciteWords.exercise
             this.Spelling = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pronunciation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Explanation = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Correct = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonConfirm = new System.Windows.Forms.Button();
+            this.Correct = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewWords)).BeginInit();
             this.panel2.SuspendLayout();
@@ -98,12 +98,32 @@ namespace ReciteWords.exercise
             this.dataGridViewWords.TabIndex = 0;
             this.dataGridViewWords.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dataGridViewWords_RowStateChanged);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.buttonConfirm);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 384);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 66);
+            this.panel2.TabIndex = 1;
+            // 
+            // buttonConfirm
+            // 
+            this.buttonConfirm.Location = new System.Drawing.Point(713, 20);
+            this.buttonConfirm.Name = "buttonConfirm";
+            this.buttonConfirm.Size = new System.Drawing.Size(75, 23);
+            this.buttonConfirm.TabIndex = 0;
+            this.buttonConfirm.Text = "确定";
+            this.buttonConfirm.UseVisualStyleBackColor = true;
+            this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
+            // 
             // Id
             // 
             this.Id.DataPropertyName = "Id";
             this.Id.HeaderText = "";
             this.Id.Name = "Id";
             this.Id.Visible = false;
+            this.Id.Width = 19;
             // 
             // ExerciseId
             // 
@@ -111,6 +131,7 @@ namespace ReciteWords.exercise
             this.ExerciseId.HeaderText = "exerciseId";
             this.ExerciseId.Name = "ExerciseId";
             this.ExerciseId.Visible = false;
+            this.ExerciseId.Width = 92;
             // 
             // LineNumber
             // 
@@ -118,6 +139,7 @@ namespace ReciteWords.exercise
             this.LineNumber.HeaderText = "lineNumber";
             this.LineNumber.Name = "LineNumber";
             this.LineNumber.Visible = false;
+            this.LineNumber.Width = 101;
             // 
             // WordsId
             // 
@@ -125,6 +147,7 @@ namespace ReciteWords.exercise
             this.WordsId.HeaderText = "wordsId";
             this.WordsId.Name = "WordsId";
             this.WordsId.Visible = false;
+            this.WordsId.Width = 81;
             // 
             // Spelling
             // 
@@ -153,32 +176,10 @@ namespace ReciteWords.exercise
             // Correct
             // 
             this.Correct.DataPropertyName = "Correct";
-            this.Correct.FalseValue = "0";
             this.Correct.HeaderText = "对错";
             this.Correct.Name = "Correct";
             this.Correct.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Correct.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Correct.TrueValue = "1";
             this.Correct.Width = 57;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.buttonConfirm);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 384);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 66);
-            this.panel2.TabIndex = 1;
-            // 
-            // buttonConfirm
-            // 
-            this.buttonConfirm.Location = new System.Drawing.Point(713, 20);
-            this.buttonConfirm.Name = "buttonConfirm";
-            this.buttonConfirm.Size = new System.Drawing.Size(75, 23);
-            this.buttonConfirm.TabIndex = 0;
-            this.buttonConfirm.Text = "确定";
-            this.buttonConfirm.UseVisualStyleBackColor = true;
-            this.buttonConfirm.Click += new System.EventHandler(this.buttonConfirm_Click);
             // 
             // FormExerciseScore
             // 
@@ -210,6 +211,6 @@ namespace ReciteWords.exercise
         private System.Windows.Forms.DataGridViewTextBoxColumn Spelling;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pronunciation;
         private System.Windows.Forms.DataGridViewTextBoxColumn Explanation;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Correct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Correct;
     }
 }
